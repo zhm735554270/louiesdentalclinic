@@ -1,1 +1,9 @@
 <?php
+/**
+ * Desc
+ */
+function modulenable_update_7000() {
+  $module = array('ctools');
+  
+  module_enable($module);
+}
