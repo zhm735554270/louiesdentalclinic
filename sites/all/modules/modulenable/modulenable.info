@@ -1,0 +1,4 @@
+name = Module Enable
+description = Enable modules downloaded from github
+version = 7.x-1.0
+core = 7.x
