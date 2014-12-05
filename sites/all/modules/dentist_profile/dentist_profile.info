@@ -1,0 +1,12 @@
+name = Dentist profile
+description = Adds content type -> Dentists
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = dentist_profile
+dependencies[] = features
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = body
+features[field_instance][] = node-dentist-body
+features[node][] = dentist
