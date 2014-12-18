@@ -80,3 +80,9 @@ function modulenable_update_7010() {
   module_enable($module);
 }
 
+
+function modulenable_update_7011() {
+  $module = array('webform');
+
+  module_enable($module);
+}
