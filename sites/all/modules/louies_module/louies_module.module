@@ -5,8 +5,13 @@
 
 function louies_module_form_alter(&$form, &$form_state, $form_id) {
 	// debug($form, NULL, TRUE);
-	$form['actions']['submit']['#value'] = "Set an Appointment";
+	// $variable = $node->$nid = '1';
+	// print_r(arg());
+	if (arg(2) == 'reservation') {
+		$form['actions']['submit']['#value'] = "Set an Appointment";
+	}
 	// $form['revision_information']['revision']['#title'] = "Set An Appointment 2";
+
 }
 
 // function louies_module_page_alter(&$page) {

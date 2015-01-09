@@ -7389,25 +7389,101 @@ a.th {
     float: left;
   }
 }
-/* line 34, ../scss/_louies.scss */
+@media only screen and (min-width: 940px) {
+  /* line 35, ../scss/_louies.scss */
+  .top-bar-section li a:not(.button) {
+    padding: 0 15px;
+    line-height: 45px;
+    color: #000;
+    background: #FFF;
+  }
+
+  /* line 42, ../scss/_louies.scss */
+  .top-bar-section ul li > a {
+    display: block;
+    width: 100%;
+    color: #000 !important;
+    padding: 12px 0 12px 0;
+    padding-left: 15px;
+    font-size: 0.8125em;
+    font-weight: bold;
+    background: #FFFFFF;
+  }
+}
+@media only screen and (max-width: 1210px) {
+  /* line 57, ../scss/_louies.scss */
+  section.block.block-views.block-views-calendar-reservation-block-1 {
+    float: left !important;
+    width: 100% !important;
+    margin-right: 2em;
+    margin-top: 1em;
+  }
+
+  /* line 64, ../scss/_louies.scss */
+  form#reservation-node-form {
+    float: left !important;
+    width: 100% !important;
+    margin-left: 0em !important;
+  }
+
+  /* line 70, ../scss/_louies.scss */
+  nav.top-bar {
+    height: 55px !important;
+  }
+
+  /* line 74, ../scss/_louies.scss */
+  a.active {
+    border: solid 0px black !important;
+  }
+
+  /* line 78, ../scss/_louies.scss */
+  .top-bar.expanded .title-area {
+    background: #FFF;
+  }
+
+  /* line 82, ../scss/_louies.scss */
+  .top-bar .toggle-topbar.menu-icon {
+    right: 15px;
+    top: 50%;
+    margin-top: -16px;
+    padding-left: 40px;
+    background: #FFF;
+  }
+
+  /* line 90, ../scss/_louies.scss */
+  .top-bar .name h1 a {
+    font-weight: bold;
+    color: #999;
+    width: 70%;
+    display: block;
+    padding: 0 15px;
+  }
+
+  /* line 98, ../scss/_louies.scss */
+  .top-bar.expanded {
+    height: auto !important;
+    background: transparent;
+  }
+}
+/* line 105, ../scss/_louies.scss */
 body {
   background: rgba(250, 250, 250, 0.8);
 }
 
-/* line 38, ../scss/_louies.scss */
+/* line 109, ../scss/_louies.scss */
 a, p {
   font-family: 'opensans', sans-serif;
   color: #666;
 }
 
-/* line 43, ../scss/_louies.scss */
+/* line 114, ../scss/_louies.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'roboto', serif;
   text-transform: uppercase;
   color: #4ecdfa;
 }
 
-/* line 49, ../scss/_louies.scss */
+/* line 120, ../scss/_louies.scss */
 p {
   font-family: inherit;
   font-weight: normal;
@@ -7417,7 +7493,7 @@ p {
   text-rendering: optimizeLegibility;
 }
 
-/* line 58, ../scss/_louies.scss */
+/* line 129, ../scss/_louies.scss */
 .row {
   width: 100%;
   margin-left: 0px;
@@ -7427,18 +7503,19 @@ p {
   max-width: 90.063em;
 }
 
+/**/
 /* NAV */
-/* line 70, ../scss/_louies.scss */
+/* line 140, ../scss/_louies.scss */
 nav.top-bar {
   height: 70px;
 }
 
-/* line 74, ../scss/_louies.scss */
+/* line 144, ../scss/_louies.scss */
 .breadcrumbs {
   display: none;
 }
 
-/* line 78, ../scss/_louies.scss */
+/* line 148, ../scss/_louies.scss */
 .top-bar {
   overflow: hidden;
   line-height: 45px;
@@ -7448,7 +7525,7 @@ nav.top-bar {
   padding: 10px 4%;
 }
 
-/* line 87, ../scss/_louies.scss */
+/* line 157, ../scss/_louies.scss */
 .top-bar .name h1 a {
   font-weight: bold;
   color: #999;
@@ -7457,7 +7534,7 @@ nav.top-bar {
   padding: 0 15px;
 }
 
-/* line 95, ../scss/_louies.scss */
+/* line 165, ../scss/_louies.scss */
 .top-bar-section {
   left: 0;
   position: relative;
@@ -7468,7 +7545,7 @@ nav.top-bar {
   float: right;
 }
 
-/* line 105, ../scss/_louies.scss */
+/* line 175, ../scss/_louies.scss */
 .top-bar-section ul {
   width: 100%;
   height: auto;
@@ -7478,42 +7555,77 @@ nav.top-bar {
   margin: 0;
 }
 
-/* line 114, ../scss/_louies.scss */
+/* line 184, ../scss/_louies.scss */
 li.leaf a {
   border-radius: 10px;
 }
 
-/* line 118, ../scss/_louies.scss */
+/* line 188, ../scss/_louies.scss */
 .top-bar-section ul li:hover > a.active {
   background: #FFF !important;
 }
 
-/* line 122, ../scss/_louies.scss */
+/* line 192, ../scss/_louies.scss */
 a.active {
   border: solid 1px #4ecdfa;
   border-radius: 10px;
   color: #4ecdfa !important;
 }
 
-/* line 128, ../scss/_louies.scss */
+/* line 198, ../scss/_louies.scss */
 .top-bar-section ul li:hover > a {
   background: #EEE !important;
   color: #333;
 }
 
+/* line 203, ../scss/_louies.scss */
+.top-bar-section ul li > a {
+  display: block;
+  width: 100%;
+  color: white;
+  padding: 12px 0 12px 0;
+  padding-left: 15px;
+  font-size: 0.8125em;
+  font-weight: bold;
+  background: #FFFFFF;
+}
+
+/* line 214, ../scss/_louies.scss */
+.top-bar.expanded .toggle-topbar a {
+  color: #4ecdfa;
+}
+
+/* line 218, ../scss/_louies.scss */
+.top-bar .toggle-topbar.menu-icon a {
+  text-indent: -48px;
+  width: 34px;
+  height: 34px;
+  line-height: 33px;
+  padding: 0;
+  color: #4ecdfa;
+}
+
+/**/
 /* FOOTER */
-/* line 136, ../scss/_louies.scss */
+/* line 229, ../scss/_louies.scss */
 .l-footer.panel.row {
   color: #FFF;
 }
 
-/* line 140, ../scss/_louies.scss */
+/* line 233, ../scss/_louies.scss */
 footer.l-footer.panel.row {
   background: #777;
+  padding: 0px;
 }
 
+/* line 238, ../scss/_louies.scss */
+.footer.large-12.columns {
+  padding: 2px;
+}
+
+/**/
 /* FORM */
-/* line 146, ../scss/_louies.scss */
+/* line 244, ../scss/_louies.scss */
 select.form-select {
   border: solid 1px #666;
   border-radius: 4px;
@@ -7522,7 +7634,7 @@ select.form-select {
   padding: 10px;
 }
 
-/* line 154, ../scss/_louies.scss */
+/* line 252, ../scss/_louies.scss */
 .copyright.large-12.columns {
   display: none;
   max-height: 0px;
@@ -7530,80 +7642,71 @@ select.form-select {
   margin: 0px;
 }
 
-/* line 162, ../scss/_louies.scss */
+/* line 260, ../scss/_louies.scss */
 .footer.large-12.columns h2 {
   display: none;
 }
 
-/* line 167, ../scss/_louies.scss */
+/* line 265, ../scss/_louies.scss */
 form#reservation-node-form label {
   display: none;
 }
 
-/* line 171, ../scss/_louies.scss */
+/* line 269, ../scss/_louies.scss */
 .rtecenter {
   text-align: center;
   background: #777;
 }
 
-/* line 178, ../scss/_louies.scss */
+/* line 274, ../scss/_louies.scss */
 td.rtecenter {
   color: #FFF;
 }
-/* line 181, ../scss/_louies.scss */
+/* line 277, ../scss/_louies.scss */
 td.rtecenter a {
   color: #4ecdfa !important;
 }
-/* line 185, ../scss/_louies.scss */
+/* line 281, ../scss/_louies.scss */
 td.rtecenter p {
   color: #FFF !important;
   font-family: 'opensans' !important;
 }
 
-/* line 191, ../scss/_louies.scss */
+/* line 287, ../scss/_louies.scss */
 tbody {
   border-top: 0px solid #ccc;
 }
 
-/* line 195, ../scss/_louies.scss */
+/* line 291, ../scss/_louies.scss */
 table {
   background: white;
   margin-bottom: 1.25em;
   border: solid 0px #dddddd;
 }
-/* line 200, ../scss/_louies.scss */
+/* line 296, ../scss/_louies.scss */
 table td {
   color: #FFF;
 }
 
-@media only screen and (min-width: 940px) {
-  /* line 207, ../scss/_louies.scss */
-  .top-bar-section li a:not(.button) {
-    padding: 0 15px;
-    line-height: 45px;
-    color: #000;
-    background: #FFF;
-  }
-}
-/* line 215, ../scss/_louies.scss */
+/* line 301, ../scss/_louies.scss */
 div.footer.large-12.column h2 {
   display: none;
 }
 
 /* INPUT */
-/* line 222, ../scss/_louies.scss */
+/* line 308, ../scss/_louies.scss */
 .form-item input {
   border: solid 1px #666;
   border-radius: 4px;
 }
 
-/* line 227, ../scss/_louies.scss */
+/* line 313, ../scss/_louies.scss */
 .text-full {
   border: solid 1px #666;
   border-radius: 4px;
 }
 
-/* line 232, ../scss/_louies.scss */
+/* line 318, ../scss/_louies.scss */
 .form-textarea-wrapper textarea {
   display: block;
   margin: 0;
@@ -7614,29 +7717,29 @@ div.footer.large-12.column h2 {
   border-radius: 4px;
 }
 
-/* line 242, ../scss/_louies.scss */
+/* line 328, ../scss/_louies.scss */
 ::-webkit-input-placeholder {
   color: #AAA;
 }
 
-/* line 246, ../scss/_louies.scss */
+/* line 332, ../scss/_louies.scss */
 :-moz-placeholder {
   /* Firefox 18- */
   color: #AAA;
 }
 
-/* line 250, ../scss/_louies.scss */
+/* line 336, ../scss/_louies.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #AAA;
 }
 
-/* line 254, ../scss/_louies.scss */
+/* line 340, ../scss/_louies.scss */
 :-ms-input-placeholder {
   color: #AAA;
 }
 
-/* line 261, ../scss/_louies.scss */
+/* line 347, ../scss/_louies.scss */
 input[type="text"], input[type="password"], input[type="date"], input[type="datetime"],
 input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"],
 input[type="number"], input[type="search"], input[type="tel"], input[type="time"],
@@ -7644,7 +7747,7 @@ input[type="url"], textarea {
   font-size: 1.125em;
 }
 
-/* line 265, ../scss/_louies.scss */
+/* line 351, ../scss/_louies.scss */
 section.block.block-views.block-views-calendar-reservation-block-1 {
   float: right;
   width: 49%;
@@ -7652,31 +7755,31 @@ section.block.block-views.block-views-calendar-reservation-block-1 {
   margin-top: 1em;
 }
 
-/* line 272, ../scss/_louies.scss */
+/* line 358, ../scss/_louies.scss */
 form#reservation-node-form {
   float: left;
   width: 45%;
   margin-left: 2em;
 }
 
-/* line 278, ../scss/_louies.scss */
+/* line 364, ../scss/_louies.scss */
 input#edit-field-e-mail-address-und-0-value {
   float: left;
   width: 49%;
 }
 
-/* line 283, ../scss/_louies.scss */
+/* line 369, ../scss/_louies.scss */
 input#edit-field-contact-number-und-0-value {
   float: right;
   width: 49%;
 }
 
-/* line 288, ../scss/_louies.scss */
+/* line 374, ../scss/_louies.scss */
 .resizable-textarea .grippie {
   display: none;
 }
 
-/* line 292, ../scss/_louies.scss */
+/* line 378, ../scss/_louies.scss */
 button#edit-submit {
   margin: 0px;
   width: 100%;
@@ -7687,25 +7790,25 @@ button#edit-submit {
   border-radius: 8px;
 }
 
-/* line 302, ../scss/_louies.scss */
+/* line 388, ../scss/_louies.scss */
 fieldset.form-wrapper {
   border: solid 0px #dddddd;
   padding: 0px;
   margin: 0px;
 }
 
-/* line 308, ../scss/_louies.scss */
+/* line 394, ../scss/_louies.scss */
 .container-inline-date .date-padding {
   padding: 10px 0px;
   float: left;
 }
 
-/* line 313, ../scss/_louies.scss */
+/* line 399, ../scss/_louies.scss */
 .description {
   display: none;
 }
 
-/* line 317, ../scss/_louies.scss */
+/* line 403, ../scss/_louies.scss */
 .date-no-float {
   clear: none;
   float: left;
@@ -7714,32 +7817,33 @@ fieldset.form-wrapper {
   position: relative;
 }
 
-/* line 325, ../scss/_louies.scss */
+/* line 411, ../scss/_louies.scss */
 .form-item.form-type-textfield.form-item-field-date-reserved-und-0-value-time {
   position: absolute;
   width: 49%;
   right: 0px;
 }
 
-/* line 331, ../scss/_louies.scss */
+/* line 417, ../scss/_louies.scss */
 .form-item.form-type-textfield.form-item-field-date-reserved-und-0-value-date {
   position: absolute !important;
   width: 49%;
 }
 
-/* line 336, ../scss/_louies.scss */
+/* line 422, ../scss/_louies.scss */
 .container-inline-date .form-item, .container-inline-date .form-item input {
   width: 100%;
 }
 
+/**/
 /* DATE */
-/* line 340, ../scss/_louies.scss */
+/* line 428, ../scss/_louies.scss */
 .view .date-nav-wrapper .date-heading h3 {
   line-height: 30px;
   font-size: 2.5em;
 }
 
-/* line 345, ../scss/_louies.scss */
+/* line 433, ../scss/_louies.scss */
 .view .date-nav-wrapper .date-prev {
   -moz-border-radius: 5px 0 0 5px;
   border-radius: 5px 0 0 5px;
@@ -7756,7 +7860,7 @@ fieldset.form-wrapper {
   font-size: 12px;
 }
 
-/* line 361, ../scss/_louies.scss */
+/* line 449, ../scss/_louies.scss */
 .view .date-nav-wrapper .date-next {
   -moz-border-radius: 0px 5px 5px 0px;
   border-radius: 0px 5px 5px 0px;
@@ -7772,7 +7876,7 @@ fieldset.form-wrapper {
   font-size: 12px;
 }
 
-/* line 376, ../scss/_louies.scss */
+/* line 464, ../scss/_louies.scss */
 .calendar-calendar th.days {
   background-color: #eee;
   color: #777;
@@ -7780,7 +7884,7 @@ fieldset.form-wrapper {
   border: 0px solid #ccc;
 }
 
-/* line 383, ../scss/_louies.scss */
+/* line 471, ../scss/_louies.scss */
 .calendar-calendar th.days {
   background-color: #4ecdfa;
   color: #777;
@@ -7788,19 +7892,19 @@ fieldset.form-wrapper {
   border: 0px solid #ccc;
 }
 
-/* line 390, ../scss/_louies.scss */
+/* line 478, ../scss/_louies.scss */
 .calendar-calendar tr td.today, .calendar-calendar tr.odd td.today, .calendar-calendar tr.even td.today {
   background-color: #4ecdfa;
   color: #FFF;
 }
 
-/* line 395, ../scss/_louies.scss */
+/* line 483, ../scss/_louies.scss */
 table .mini-day-on a {
   text-decoration: none;
   color: #4ecdfa;
 }
 
-/* line 400, ../scss/_louies.scss */
+/* line 488, ../scss/_louies.scss */
 table td.mini a:hover {
   background: #4ecdfa;
   text-decoration: none !important;

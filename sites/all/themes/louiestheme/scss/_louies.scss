@@ -31,6 +31,77 @@
 	}
 }
 
+@media only screen and (min-width: 940px) {
+	.top-bar-section li a:not(.button) {
+		padding: 0 15px;
+		line-height: 45px;
+		color: #000;
+		background: #FFF;
+	}
+
+	.top-bar-section ul li > a {
+		display: block;
+		width: 100%;
+		color: #000 !important;
+		padding: 12px 0 12px 0;
+		padding-left: 15px;
+		font-size: 0.8125em;
+		font-weight: bold;
+		background: #FFFFFF;
+	}
+
+}
+
+@media only screen and (max-width: 1210px) { 
+
+	section.block.block-views.block-views-calendar-reservation-block-1 {
+		float: left !important;
+		width: 100% !important;
+		margin-right: 2em;
+		margin-top: 1em;
+	}
+
+	form#reservation-node-form {
+		float: left !important;
+		width: 100% !important;
+		margin-left: 0em !important;
+	}
+
+	nav.top-bar {
+		height: 55px !important;
+	}
+
+	a.active {
+		border: solid 0px black !important;
+	}
+
+	.top-bar.expanded .title-area {
+		background: #FFF;
+	}
+
+	.top-bar .toggle-topbar.menu-icon {
+		right: 15px;
+		top: 50%;
+		margin-top: -16px;
+		padding-left: 40px;
+		background: #FFF;
+	}
+
+	.top-bar .name h1 a {
+		font-weight: bold;
+		color: #999;
+		width: 70%;
+		display: block;
+		padding: 0 15px;
+	}
+
+	.top-bar.expanded {
+		height: auto !important;
+		background: transparent;
+	}
+
+}
+
 body {
 	background: rgba(250, 250, 250, 0.8);
 }
@@ -64,9 +135,8 @@ p {
 	max-width: 90.063em
 }
 
-
+/**/  
 /* NAV */
-
 nav.top-bar {
 	height: 70px;
 }
@@ -130,18 +200,46 @@ a.active {
 	color: #333;
 }
 
+.top-bar-section ul li > a {
+	display: block;
+	width: 100%;
+	color: white;
+	padding: 12px 0 12px 0;
+	padding-left: 15px;
+	font-size: 0.8125em;
+	font-weight: bold;
+	background: #FFFFFF;
+}
 
+.top-bar.expanded .toggle-topbar a {
+	color: #4ecdfa;
+}
+
+.top-bar .toggle-topbar.menu-icon a {
+	text-indent: -48px;
+	width: 34px;
+	height: 34px;
+	line-height: 33px;
+	padding: 0;
+	color: #4ecdfa;
+}
+
+/**/
 /* FOOTER */
-
 .l-footer.panel.row {
 	color: #FFF;
 }
 
 footer.l-footer.panel.row {
 	background: #777;
+	padding: 0px;
 }
 
+.footer.large-12.columns {
+	padding: 2px;
+}
 
+/**/
 /* FORM */
 select.form-select {
 	border: solid 1px #666;
@@ -173,8 +271,6 @@ form#reservation-node-form label {
 	background: #777;
 }
 
-
-
 td.rtecenter {
 	color: #FFF;	
 
@@ -199,16 +295,6 @@ table {
 
 	td {
 		color: #FFF;
-	}
-}
-
-
-@media only screen and (min-width: 940px) {
-	.top-bar-section li a:not(.button) {
-		padding: 0 15px;
-		line-height: 45px;
-		color: #000;
-		background: #FFF;
 	}
 }
 
@@ -336,6 +422,8 @@ fieldset.form-wrapper {
 .container-inline-date .form-item, .container-inline-date .form-item input {
 	width: 100%;
 }
+
+/**/
 /* DATE */
 .view .date-nav-wrapper .date-heading h3 {
 	line-height: 30px;
