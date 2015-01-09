@@ -1,0 +1,90 @@
+ <?php
+// /**
+//  * Desc
+//  */
+// function modulenable_update_7000() {
+//   $module = array('ctools');
+  
+//   module_enable($module);
+// }
+
+
+// function modulenable_update_7001() {
+//   $module = array('views');
+
+//   module_enable($module);
+// }
+
+
+// function modulenable_update_7002() {
+//   $module = array('views_ui');
+
+//   module_enable($module);
+// }
+
+
+// function modulenable_update_7003() {
+//   $module = array('pathauto');
+
+//   module_enable($module);
+// }
+
+
+// function modulenable_update_7004() {
+// 	$module = array('features');
+
+// 	module_enable($module);
+// }
+
+
+// function modulenable_update_7005() {
+//   $module = array('dentist_profile');
+
+//   module_enable($module);
+// }
+
+
+// function modulenable_update_7006() {
+//   $module = array('contact');
+
+//   module_enable($module);
+// }
+
+
+// function modulenable_update_7007() {
+//   $module = array('addressfield');
+
+//   module_enable($module);
+// }
+
+
+// function modulenable_update_7008() {
+//   $module = array('commerce');
+
+//   module_enable($module);
+// }
+
+
+// function modulenable_update_7009() {
+//   $module = array('commerce_auto_product_display');
+
+//   module_enable($module);
+// }
+
+
+// function modulenable_update_7010() {
+//   $module = array('commerce_auto_product_display','commerce_multicurrency','currency','currency_converter','currency_yahoo_finance','entity','features_extra','ip2country','iptolocation','location','module_filter','money','multi_currency_pricelist','quicktabs','rules','views_php');
+
+//   module_enable($module);
+// }
+// <<<<<<< HEAD
+// =======
+
+
+// function modulenable_update_7010() {
+//   $module = array('visualization');
+
+//   module_enable($module);
+// }
+
+// >>>>>>> 516ae4152cf22c038a16a76b9843d5b4abaf0723

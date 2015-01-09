@@ -1,0 +1,4 @@
+name = Custom Module 1
+description = Dynamically capturing of IP addresses then convert to currency depending on the location of the anonymous and authenticated users
+package = louiesdental
+core = 7.x

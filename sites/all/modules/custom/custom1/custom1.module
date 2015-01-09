@@ -1,0 +1,29 @@
+<?php
+
+/*
+ *	Implements hook_menu()
+ */
+
+function custom1_menu() {
+	$items = array();
+	$items['admin/config/system/custom'] = array(
+		'title' => t('Custom 1'),
+		'description' => t('My description'),
+		'page callback' => 'drupal_get_form',
+		'page arguments' => array('custom1_sample_form'),
+		'access arguments' => array('access content'),
+		'type' => MENU_NORMAL_ITEM,
+	);
+	return $items;
+}
+
+function custom1_sample_form($form, &$form_state) {
+	$form['title'] = array(
+		'#type' => 'textfield',
+		'#value' => 'Hello',
+		'#weight' => -5,
+		'#required' => TRUE,
+	);
+	$form = system_settings_form($form);
+	return $form;
+}
