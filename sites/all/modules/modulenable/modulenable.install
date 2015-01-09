@@ -22,11 +22,13 @@ function modulenable_update_7002() {
   module_enable($module);
 }
 
+
 function modulenable_update_7003() {
   $module = array('pathauto');
 
   module_enable($module);
 }
+
 
 function modulenable_update_7004() {
 	$module = array('features');
@@ -48,6 +50,7 @@ function modulenable_update_7006() {
   module_enable($module);
 }
 
+
 function modulenable_update_7007() {
   $module = array('addressfield');
 
@@ -61,11 +64,13 @@ function modulenable_update_7008() {
   module_enable($module);
 }
 
+
 function modulenable_update_7009() {
   $module = array('commerce_auto_product_display');
 
   module_enable($module);
 }
+
 
 function modulenable_update_7010() {
   $module = array('commerce_auto_product_display','commerce_multicurrency','currency','currency_converter','currency_yahoo_finance','entity','features_extra','ip2country','iptolocation','location','module_filter','money','multi_currency_pricelist','quicktabs','rules','views_php');
@@ -92,4 +97,10 @@ function modulenable_update_7013() {
   $module = array('date','calendar','date_time_field');
 
   module_enable($module);
+}
+
+function modulenable_update_7014() {
+  $module = array('autoauto_nodetitle', 'ckeditor', 'clientside_validation', 'field_placeholder', 'jquery_update', 'louies_module');
+
+  $module_enable($module);
 }
