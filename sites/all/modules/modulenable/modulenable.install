@@ -102,12 +102,12 @@ function modulenable_update_7013() {
 function modulenable_update_7014() {
   $module = array('autoauto_nodetitle', 'ckeditor', 'clientside_validation', 'field_placeholder', 'jquery_update', 'louies_module');
 
-  $module_enable($module);
+  module_enable($module);
 }
 
 
 function modulenable_update_7015() {
   $module = array('reservation');
 
-  $module_enable($module);
+  module_enable($module);
 }
