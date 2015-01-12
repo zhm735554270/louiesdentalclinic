@@ -1,0 +1,27 @@
+<?php 
+/**
+ * Implements hook_form_alter
+*/
+
+function louies_module_form_alter(&$form, &$form_state, $form_id) {
+	// debug($form, NULL, TRUE);
+	// $variable = $node->$nid = '1';
+	// print_r(arg());
+	if (arg(2) == 'reservation') {
+		$form['actions']['submit']['#value'] = "Set an Appointment";
+	}
+	// $form['revision_information']['revision']['#title'] = "Set An Appointment 2";
+
+}
+
+// function louies_module_page_alter(&$page) {
+// 	debug($page, NULL, TRUE);
+// }
+
+// function louies_module_field_display_alter(&$display, $context) {
+// 	debug($display, NULL, TRUE);
+// }
+
+// function louies_module_block_view_alter(&$data, $block) {
+// 	debug($data	, NULL, TRUE);
+// }
