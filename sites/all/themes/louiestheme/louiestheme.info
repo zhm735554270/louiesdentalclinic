@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 name = louiestheme
+=======
+name = Louies Theme
+>>>>>>> 7bf6e6c04219f55468a6e0ab9c2f60f62ced4d4c
 description = Custom sub-theme based on the the Zurb Foundation base theme.
 screenshot = images/screenshot.png
 

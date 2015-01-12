@@ -1,4 +1,413 @@
+<<<<<<< HEAD
 button, .button {
 display: inline-block;
 }
 
+=======
+@font-face {
+	font-family: 'roboto';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(http://fonts.gstatic.com/s/robotoslab/v6/dazS1PrQQuCxC3iOAJFEJdGR1r2frwpfjEqI8Bb_XHU.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+	font-family: 'roboto-thin';
+	font-style: normal;
+	font-weight: 100;
+	src: local('Roboto Slab Thin'), local('RobotoSlab-Thin'), url(http://fonts.gstatic.com/s/robotoslab/v6/MEz38VLIFL-t46JUtkIEgGzZpt1Zv2lgqhgSPQ2HnUo.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+	@font-face {
+	font-family: 'opensans';
+	font-style: normal;
+	font-weight: 100;
+	src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@media only screen {
+	.column, .columns {
+		position: relative;
+		padding-left: 3.9375em;
+		padding-right: 3.9375em;
+		float: left;
+	}
+}
+
+body {
+	background: rgba(250, 250, 250, 0.8);
+}
+
+a, p {
+	font-family: 'opensans', sans-serif;
+	color: #666;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'roboto', serif;
+	text-transform: uppercase;
+	color: #4ecdfa;
+}
+
+p {
+	font-family: inherit;
+	font-weight: normal;
+	font-size: 1rem;
+	line-height: 1;
+	margin-bottom: 1.25rem;
+	text-rendering: optimizeLegibility;
+}
+
+.row {
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0;
+	margin-bottom: 0;
+	max-width: 90.063em
+}
+
+
+/* NAV */
+
+nav.top-bar {
+	height: 70px;
+}
+
+.breadcrumbs {
+	display: none;
+}
+
+.top-bar {
+	overflow: hidden;
+	line-height: 45px;
+	position: relative;
+	background: #FFF;
+	margin-bottom: 0;
+	padding: 10px 4%;
+}
+
+.top-bar .name h1 a {
+	font-weight: bold;
+	color: #999;
+	width: 100%;
+	display: block;
+	padding: 0 15px;
+}
+
+.top-bar-section {
+	left: 0;
+	position: relative;
+	width: auto;
+	-webkit-transition: left 300ms ease-out;
+	-moz-transition: left 300ms ease-out;
+	transition: left 300ms ease-out;
+	float: right;
+}
+
+.top-bar-section ul {
+	width: 100%;
+	height: auto;
+	display: block;
+	background: #FFF;
+	font-size: 16px;
+	margin: 0;
+}
+
+li.leaf a {
+	border-radius: 10px;	
+}
+
+.top-bar-section ul li:hover > a.active {
+	background: #FFF !important;
+}
+
+a.active {
+	border: solid 1px #4ecdfa;
+	border-radius: 10px;
+	color: #4ecdfa !important;
+}
+
+.top-bar-section ul li:hover > a {
+	background: #EEE !important;
+	color: #333;
+}
+
+
+/* FOOTER */
+
+.l-footer.panel.row {
+	color: #FFF;
+}
+
+footer.l-footer.panel.row {
+	background: #777;
+}
+
+
+/* FORM */
+select.form-select {
+	border: solid 1px #666;
+	border-radius: 4px;
+	color: #AAA;
+	background: #FFF;
+	padding: 10px;
+}
+
+.copyright.large-12.columns {
+	display: none;
+	max-height: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.footer.large-12.columns {
+	h2 {
+		display: none;
+	}
+}
+
+form#reservation-node-form label {
+	display: none;
+}
+
+.rtecenter {
+	text-align: center;
+	background: #777;
+}
+
+
+
+td.rtecenter {
+	color: #FFF;	
+
+	a {
+		color: #4ecdfa !important;
+	}
+
+	p {
+		color: #FFF !important;
+		font-family: 'opensans' !important;
+	}
+}
+
+tbody {
+	border-top: 0px solid #ccc;
+}
+
+table {
+	background: white;
+	margin-bottom: 1.25em;
+	border: solid 0px #dddddd;
+
+	td {
+		color: #FFF;
+	}
+}
+
+
+@media only screen and (min-width: 940px) {
+	.top-bar-section li a:not(.button) {
+		padding: 0 15px;
+		line-height: 45px;
+		color: #000;
+		background: #FFF;
+	}
+}
+
+div.footer.large-12.column h2 {
+	display: none;
+}
+
+
+/* INPUT */
+
+.form-item input {
+	border: solid 1px #666;
+	border-radius: 4px;
+}
+
+.text-full {
+	border: solid 1px #666;
+	border-radius: 4px;
+}
+
+.form-textarea-wrapper textarea {
+	display: block;
+	margin: 0;
+	width: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+::-webkit-input-placeholder {
+   color: #AAA;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #AAA;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #AAA;  
+}
+
+:-ms-input-placeholder {  
+   color: #AAA;  
+}
+
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], 
+input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], 
+input[type="number"], input[type="search"], input[type="tel"], input[type="time"], 
+input[type="url"], textarea {
+	font-size: 1.125em;
+}
+
+section.block.block-views.block-views-calendar-reservation-block-1 {
+	float: right;
+	width: 49%;
+	margin-right: 2em;
+	margin-top: 1em;
+}
+
+form#reservation-node-form {
+	float: left;
+	width: 45%;
+	margin-left: 2em;
+}
+
+input#edit-field-e-mail-address-und-0-value {
+	float: left;
+	width: 49%;
+}
+
+input#edit-field-contact-number-und-0-value {
+	float: right;
+	width: 49%;
+}
+
+.resizable-textarea .grippie {
+	display: none;
+}
+
+button#edit-submit {
+	margin: 0px;
+	width: 100%;
+	height: 50px;
+	color: #FFF;
+	background: #4ecdfa;
+	border: solid 0px #FFF;
+	border-radius: 8px;
+}
+
+fieldset.form-wrapper {
+	border: solid 0px #dddddd;
+	padding: 0px;
+	margin: 0px;
+}
+
+.container-inline-date .date-padding {
+	padding: 10px 0px;
+	float: left;
+}
+
+.description {
+	display: none;
+}
+
+.date-no-float {
+	clear: none;
+	float: left;
+	width: 100%;
+	height: 3.5em;
+	position: relative;
+}
+
+.form-item.form-type-textfield.form-item-field-date-reserved-und-0-value-time {
+	position: absolute;
+	width: 49%;
+	right: 0px;
+}
+
+.form-item.form-type-textfield.form-item-field-date-reserved-und-0-value-date {
+	position: absolute !important;
+	width: 49%;
+}
+
+.container-inline-date .form-item, .container-inline-date .form-item input {
+	width: 100%;
+}
+/* DATE */
+.view .date-nav-wrapper .date-heading h3 {
+	line-height: 30px;
+	font-size: 2.5em;
+}
+
+.view .date-nav-wrapper .date-prev {
+	-moz-border-radius: 5px 0 0 5px;
+	border-radius: 5px 0 0 5px;
+	background: none repeat scroll 0 0 #fafafa;
+	float: none;
+	padding: 5px 0;
+	position: absolute;
+	right: 60px;
+	left: auto;
+	text-align: right;
+	top: 0px;
+	width: auto;
+	z-index: 1;
+	font-size: 12px;
+}
+
+.view .date-nav-wrapper .date-next {
+	-moz-border-radius: 0px 5px 5px 0px;
+	border-radius: 0px 5px 5px 0px;
+	background: none repeat scroll 0 0 #fafafa;
+	float: none;
+	padding: 5px 0;
+	position: absolute;
+	right: 0px;
+	text-align: right;
+	top: 0px;
+	width: auto;
+	z-index: 1;
+	font-size: 12px;
+}
+
+.calendar-calendar th.days {
+	background-color: #eee;
+	color: #777;
+	font-weight: bold;
+	border: 0px solid #ccc;
+}
+
+.calendar-calendar th.days {
+	background-color: #4ecdfa;
+	color: #777;
+	font-weight: bold;
+	border: 0px solid #ccc;
+}
+
+.calendar-calendar tr td.today, .calendar-calendar tr.odd td.today, .calendar-calendar tr.even td.today {
+	background-color: #4ecdfa;
+	color: #FFF;
+}
+
+table .mini-day-on a {
+	text-decoration: none;
+	color: #4ecdfa;
+}
+
+table td.mini a:hover {
+	background: #4ecdfa;
+	text-decoration: none !important;
+	color: white;
+	padding: 2px;
+	border-radius: 5px;
+}
+>>>>>>> 7bf6e6c04219f55468a6e0ab9c2f60f62ced4d4c

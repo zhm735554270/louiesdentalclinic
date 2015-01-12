@@ -57,23 +57,4 @@
 //   module_enable($module);
 // }
 
-
-// function modulenable_update_7008() {
-//   $module = array('commerce');
-
-//   module_enable($module);
-// }
-
-
-// function modulenable_update_7009() {
-//   $module = array('commerce_auto_product_display','commerce_multicurrency','currency','currency_converter','currency_yahoo_finance','entity','features_extra','ip2country','iptolocation','location','module_filter','money','multi_currency_pricelist','quicktabs','rules','views_php');
-
-//   module_enable($module);
-// }
-
-
-// function modulenable_update_7010() {
-//   $module = array('visualization');
-
-//   module_enable($module);
-// }
+ 
