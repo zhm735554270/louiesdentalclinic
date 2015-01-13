@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Reservation feature.
- */
-
-include_once 'reservation.features.inc';
