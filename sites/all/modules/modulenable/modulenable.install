@@ -2,82 +2,61 @@
 // /**
 //  * Desc
 //  */
-// function modulenable_update_7000() {
-//   $module = array('ctools');
+function modulenable_update_7000() {
+    $module = array('ctools');
   
-//   module_enable($module);
-// }
+      module_enable($module);
+}
 
 
-// function modulenable_update_7001() {
-//   $module = array('views');
+function modulenable_update_7001() {
+    $module = array('views');
 
-//   module_enable($module);
-// }
+     module_enable($module);
+   }
 
 
-// function modulenable_update_7002() {
-//   $module = array('views_ui');
+function modulenable_update_7002() {
+  $module = array('views_ui');
 
-//   module_enable($module);
-// }
-
-<<<<<<< HEAD
-=======
+  module_enable($module);
+}
 
 function modulenable_update_7003() {
   $module = array('pathauto');
->>>>>>> d552d0914067447054810f88ffa60d00b95806b9
 
-// function modulenable_update_7003() {
-//   $module = array('pathauto');
+  module_enable($module);
+}
+// >>>>>>> d552d0914067447054810f88ffa60d00b95806b9
 
-<<<<<<< HEAD
-//   module_enable($module);
-// }
-=======
 
 function modulenable_update_7004() {
 	$module = array('features');
->>>>>>> d552d0914067447054810f88ffa60d00b95806b9
+
+  module_enable($module);
+}
+// >>>>>>> d552d0914067447054810f88ffa60d00b95806b9
+
+function modulenable_update_7005() {
+  $module = array('dentist_profile');
+
+  module_enable($module);
+ }
 
 
-// function modulenable_update_7004() {
-// 	$module = array('features');
+function modulenable_update_7006() {
+  $module = array('contact');
 
-// 	module_enable($module);
-// }
+  module_enable($module);
+}
 
-
-// function modulenable_update_7005() {
-//   $module = array('dentist_profile');
-
-//   module_enable($module);
-// }
-
-
-<<<<<<< HEAD
-// function modulenable_update_7006() {
-//   $module = array('contact');
-=======
 
 function modulenable_update_7007() {
-  $module = array('addressfield');
->>>>>>> d552d0914067447054810f88ffa60d00b95806b9
+ $module = array('addressfield');
 
-//   module_enable($module);
-// }
+  module_enable($module);
+}
 
-
-// function modulenable_update_7007() {
-//   $module = array('addressfield');
-
-//   module_enable($module);
-// }
-
-<<<<<<< HEAD
- 
-=======
 
 function modulenable_update_7009() {
   $module = array('commerce_auto_product_display');
@@ -124,5 +103,4 @@ function modulenable_update_7015() {
   $module = array('reservation');
 
   module_enable($module);
-}
->>>>>>> d552d0914067447054810f88ffa60d00b95806b9
+} 
