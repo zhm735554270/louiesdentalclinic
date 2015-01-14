@@ -1,6 +1,0 @@
-: $Id = $
-name = louies_module
-description = Hooke Alter Module
-package = Louies Module
-version = "7.x-10"
-core = 7.x

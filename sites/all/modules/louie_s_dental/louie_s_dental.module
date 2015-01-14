@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Louie's Dental feature.
- */
-
-include_once 'louie_s_dental.features.inc';
