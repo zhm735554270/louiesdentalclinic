@@ -1,3 +1,4 @@
+/* ========== */
 @font-face {
 	font-family: 'roboto';
 	font-style: normal;
@@ -14,13 +15,15 @@
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
-	@font-face {
+@font-face {
 	font-family: 'opensans';
 	font-style: normal;
 	font-weight: 100;
 	src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
+/* ========== */
+
 
 @media only screen {
 	.column, .columns {
@@ -130,7 +133,7 @@
 }
 
 body {
-	background: rgba(250, 250, 250, 0.8);
+	background: rgb(255, 255, 255);
 	max-width: 1350px;
 	margin: auto;
 	padding: auto;
@@ -154,6 +157,11 @@ p {
 	line-height: 1;
 	margin-bottom: 1.25rem;
 	text-rendering: optimizeLegibility;
+}
+
+table thead tr th, table tfoot tr th, table tbody tr td, table tr td, table tfoot tr td {
+	display: table-cell;
+	line-height: 2.025em;
 }
 
 .row {
@@ -232,8 +240,8 @@ nav.top-bar {
 }
 
 li.leaf {
-	margin-left: 1px;
-	margin-right: 1px;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 li.leaf a {
@@ -291,6 +299,10 @@ img.logo {
 	opacity: .85;
 }
 
+.main-nav .leaf a {
+	font-family: 'roboto';
+}
+
 /**/
 /* FOOTER */
 .l-footer.panel.row {
@@ -303,11 +315,11 @@ footer.l-footer.panel.row {
 }
 
 .footer.large-12.columns {
-	padding: 2px;
+	padding: 0px;
 }
 
 /**/
-/* FORM */
+/* RESERVATION FORM */
 select.form-select {
 	border: solid 1px #666;
 	border-radius: 4px;
@@ -374,6 +386,13 @@ div.footer.large-12.column h2 {
 }
 
 
+/**/
+/* FOOTER BLOCK */
+section.block.block-views.block-views-footer-block {
+	margin-top: 1.5em;
+}
+
+/**/
 /* INPUT */
 
 .form-item input {
@@ -572,67 +591,69 @@ table td.mini a:hover {
 	border-radius: 5px;
 }
 
-/**/
-/* BLOCK BANNER */
-h2.block-title {
-	display: none;
+input[type="file"], input[type="checkbox"], input[type="radio"], select {
+	margin: 0;
 }
 
-.views-slideshow-cycle-main-frame-row-item.views-row.views-row-1.views-row-even {
-	position: relative;
+.form-item.form-type-radio.form-item-field-type-of-appointment-und {
+	font-family: 'opensans';
 }
 
-h1.banner-content-title {
-	position: absolute;
-	top: 30%;
-	left: 5%;
-	color:#FFF;
-	text-shadow: 3px 3px 5px rgba(150, 150, 150, 1);
+div#edit-field-type-of-appointment-und {
+	display: inline-flex;
 }
 
-.banner-slide-body {
-	position: absolute;
-	top: 38%;
-	left: 5%;
-	p {
-		color:#FFF;
-		text-shadow: 3px 3px 5px rgba(150, 150, 150, 1);
-		font-size: x-large;
-		width: 57%;
-	}
-}
-
-span.views-slideshow-controls-text-status-play a {
-/*	background: green;
-	color: rgba(0, 0, 0, 0);*/
-	display: none;
-}
-
-span.views-slideshow-controls-text-status-pause a {
-/*	background: red;
-	color: rgba(0, 0, 0, 0);*/
-	display: none;
+.form-checkboxes .form-item, .form-radios .form-item {
+	margin-top: 0.7em;
+	margin-bottom: 0.7em;
+	margin-right: 3em;
+	margin-left: 0em;
 }
 
 /**/
 /* GALLERY */
+.views-field.views-field-title {
+	font-family: 'roboto';
+	text-transform: uppercase;
+	color: #777;
+}
+
 .views-field.views-field-field-before-image {
 	float: left;
 	width: 48%;
+	font-family: 'opensans';
+	font-style: oblique;
+	color: #999;
+	margin: 10px 0px;
+
 }
 
 .views-field.views-field-field-after-image {
 	float: right;
 	width: 48%;
+	font-family: 'opensans';
+	font-style: oblique;
+	color: #999;
+	margin: 10px 0px;
 }
 
 .view-gallery-views {
 	table {
 		width: 100%;
+
+		td {
+			background: #FFF;
+		}
+	}
+
+	table tr th, table tr td {
+		padding: 1.5625em 1.125em;
+		font-size: 0.875em;
+		color: #222222;
 	}
 
 	img {
-		border-radius: 20px !important;
+		border-radius: 13px !important;
 	}
 
 	tr {
@@ -653,3 +674,281 @@ span.views-slideshow-controls-text-status-pause a {
 		margin: 4em;
 	}
 }
+
+/**/
+/* ABOUT US (PAGE) */
+
+h1.about-title a {
+	font-family: 'roboto';
+	color: #4ecdfa;
+} 
+
+.view-about-us {
+	.views-field.views-field-title {
+		font-size: 2.5em;
+		color: #4ecdfa;
+		height: 1em;
+	}
+
+	h1#page-title {
+		margin: 1em 1.5em 0em 1.5em;
+	}
+
+	a {
+		font-family: 'roboto';
+		color: #4ecdfa;
+		text-transform: uppercase;
+	}
+	margin: 4em;
+}
+
+
+.views-field.views-field-field-about-image {
+	float: right;
+	margin-right: 5em;
+	img {
+		border-radius: 15px;
+	}
+}
+
+.views-field.views-field-field-specialty {
+	float: left;
+	width: 50%;
+	text-align: left;
+	position: relative;
+	font-family: 'opensans';
+	margin-bottom: 4em;
+	margin-top: 3em;
+	border-bottom: solid 1px;
+	padding-bottom: 1em;
+}
+
+.views-field.views-field-field-degree {
+	float: left;
+	width: 50%;
+	text-align: left;
+	position: relative;
+	font-family: 'opensans';
+	margin-bottom: 4em;
+	border-bottom: solid 1px;
+	padding-bottom: 1em;
+}
+
+.views-field.views-field-field-training {
+	float: left;
+	width: 50%;
+	text-align: left;
+	position: relative;
+	font-family: 'opensans';
+	margin-bottom: 4em;
+	border-bottom: solid 1px;
+	padding-bottom: 1em;
+}	
+
+.views-field.views-field-field-experience {
+	float: left;
+	width: 50%;
+	text-align: left;
+	position: relative;
+	font-family: 'opensans';
+	margin-bottom: 4em;
+	border-bottom: solid 1px;
+	padding-bottom: 1em;
+}
+
+
+.views-field.views-field-field-award {
+	float: left;
+	width: 50%;
+	text-align: left;
+	position: relative;
+	font-family: 'opensans';
+	margin-bottom: 4em;
+	border-bottom: solid 1px;
+	padding-bottom: 1em;
+}
+
+
+.views-field.views-field-field-working-days {
+	float: left;
+	width: 50%;
+	text-align: left;
+	position: relative;
+	font-family: 'opensans';
+	margin-bottom: 4em;
+	border-bottom: solid 1px;
+	padding-bottom: 1em;
+}
+
+span.views-label.views-label-field-specialty {
+	float: left;
+	width: 12rem;
+	font-weight: bold;
+}
+
+span.views-label.views-label-field-degree {
+	float: left;
+	width: 12rem;
+	font-weight: bold;
+}
+
+span.views-label.views-label-field-training {
+	float: left;
+	width: 12rem;
+	font-weight: bold;
+}
+
+span.views-label.views-label-field-experience {
+	float: left;
+	width: 12rem;
+	font-weight: bold;
+}
+
+span.views-label.views-label-field-award {
+	float: left;
+	width: 12rem;
+	font-weight: bold;
+}
+
+span.views-label.views-label-field-working-days {
+	float: left;
+	width: 12rem;
+	font-weight: bold;
+}
+
+
+.views-field.views-field-description {
+	width: 95%;
+}
+
+/**/
+/* ABOUT US (BLOCK) */
+
+.views-field.views-field-field-about-us-block-image.about-block-image {
+	float: left;
+}
+
+h1.field-content.about-title {
+	margin-top: 3.5em;
+}
+
+.large-12.main.columns {
+	.view-about-us-block- {
+		margin: 4em;
+		text-align: center;
+	}
+
+	table {
+		background: #FFF;
+		margin-bottom: 1.25em;
+		border: solid 0px #dddddd;
+	}
+}
+
+
+
+/* HOW TO REACH US */
+article#node-14 {
+	margin: 4em;
+}
+
+.geofieldMap.geofield-processed-processed {
+	border-radius: 25px;
+}
+
+.field.field-name-field-location.field-type-geofield.field-label-above.field-wrapper{
+	.field-label {
+		display: none;
+	}
+}
+
+/* KEEP IN TOUCH */
+.keep-in-touch {
+	float: right;
+	width: 50%;
+}
+
+form#webform-client-form-14 {
+	float: left;
+}
+
+@import "_home-block";
+
+/* ================= ABOUT PAGE ================= */
+.about-us-content {
+	margin: 4em;
+
+	p {
+		line-height: 2.25em;
+		font-size: 1.2em;
+		font-family: 'opensans';
+		color: #888;
+	}
+
+	h3 {
+		font-size: 2.4em;
+		line-height: 0em;
+	}
+
+	img {
+		border-radius: 13px;
+	}
+}
+
+.about-ldc {
+	float: left;
+}
+
+.about-msj {
+	float: left;
+	margin-right: 1em;
+	margin-top: 3em;
+}
+
+.about-accreditation {
+	float: left;
+	margin-top: 3em;
+	width: 100%;
+}
+
+.about-dentist {
+	float: left;
+	text-align: center;
+}
+
+.about-ldc {
+	img {
+		float: right;
+	}
+}
+
+p.line {
+	border-bottom: double 4px #AAA;
+	line-height: 2.5em;
+	font-size: 1.7em;
+	font-family: 'roboto-thin';
+	font-weight: bold;
+}
+
+.about-msj {
+	img {
+		float: left;
+		margin-right: 10px;
+	}
+
+}
+
+/*.about-dentist {
+	img {
+		width: 30%;
+	}
+}*/
+
+.img-container {
+	border: solid 1px #4ecdfa;
+	width: 30%;
+	padding: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* ================= END ABOUT PAGE ================= */

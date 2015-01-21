@@ -1,0 +1,4 @@
+name = Louie's Module
+description = Hook Alter Modules
+package = louiesdental
+core = 7.x

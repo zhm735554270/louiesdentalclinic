@@ -1,0 +1,38 @@
+<?php 
+/**
+ * Implements hook_form_alter
+*/
+// print_r(arg());
+// debug($form, NULL, TRUE);
+function louies_module_form_alter(&$form, &$form_state, $form_id) {
+	// $variable = $node->$nid = '1';
+	if (arg(0) == 'node' && arg(1) == 'add' && arg(2) == 'reservation') {
+		$form['actions']['submit']['#value'] = "Set an Appointment";
+	}
+	// $form['revision_information']['revision']['#title'] = "Set An Appointment 2";
+}
+
+/**
+ * Implements hook_form_alter
+*/
+function louies_module_page_alter(&$page) {
+	// print_r(arg());
+	// debug($page, NULL, TRUE);
+	if(arg(0) == 'node' && arg(1) == '15') {
+		echo '<style>h1#page-title{display:none;}</style>';
+	}
+}
+
+
+
+// function louies_module_page_alter(&$page) {
+// 	debug($page, NULL, TRUE);
+// }
+
+// function louies_module_field_display_alter(&$display, $context) {
+// 	debug($display, NULL, TRUE);
+// }
+
+// function louies_module_block_view_alter(&$data, $block) {
+// 	debug($data	, NULL, TRUE);
+// }	
