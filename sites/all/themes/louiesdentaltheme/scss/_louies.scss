@@ -1,4 +1,10 @@
-/* ========== */
+/* IMPORT */
+@import "_home-block";
+@import "_media";
+/* END */
+
+
+/* FONTS */
 @font-face {
 	font-family: 'roboto';
 	font-style: normal;
@@ -15,121 +21,39 @@
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
-@font-face {
-	font-family: 'opensans';
-	font-style: normal;
-	font-weight: 100;
-	src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400);
+/* END */
+
+$font-opensans: 'Open Sans', sans-serif;
+$color-ldc-blue: #4ecdfa;
+$color-ldc-caption: #AAA;
+$color-bgfooter: #777;
+
 /* ========== */
 
-
-@media only screen {
-	.column, .columns {
-		position: relative;
-		padding-left: 3.9375em;
-		padding-right: 3.9375em;
-		float: left;
-
-	}	
+.large-12.main.columns {
+	margin: 0px;
+	padding: 0px;
 }
 
-@media only screen and (max-width: 940px) {
-
-	nav.top-bar.expanded {
-		.top-bar-section ul li > a {
-			display: block;
-			width: 100%;
-			color: rgb(63, 39, 39);
-			padding: 12px 0 12px 0;
-			padding-left: 15px;
-			font-size: 0.8125em;
-			font-weight: bold;
-			background: #FFFFFF;
-		}
-	}
-
-	.top-bar-section {
-		left: 0;
-		position: relative;
-		width: 100% !important;
-		-webkit-transition: left 300ms ease-out;
-		-moz-transition: left 300ms ease-out;
-		transition: left 300ms ease-out;
-		float: right;
-	}
-
-	.top-bar {
-		overflow: hidden;
-		line-height: 45px;
-		position: relative;
-		background: #FFF;
-		margin-bottom: 0;
-		padding: 0px !important;
-	}
-
+.block {
+	margin: 0px 4.4%;
 }
 
-@media only screen and (min-width: 941px) {
-	.top-bar-section li a:not(.button) {
-		padding: 0 15px;
-		line-height: 45px;
-		color: #000;
-		background: #FFF;
-	}
-
+.view {
+	margin: 0px 4.4%;
 }
 
-@media only screen and (max-width: 1210px) { 
+.node {
+	margin: 0px 4.4%;
+}
 
-	section.block.block-views.block-views-calendar-reservation-block-1 {
-		float: left !important;
-		width: 100% !important;
-		margin-right: 2em;
-		margin-top: 1em;
-	}
+h1#page-title {
+	margin: 0px 4.4%;
+}
 
-	form#reservation-node-form {
-		float: left !important;
-		width: 100% !important;
-		margin-left: 0em !important;
-	}
-
-	nav.top-bar {
-		height: 55px !important;
-	}
-
-	a.active {
-		border: solid 0px black !important;
-	}
-
-	.top-bar.expanded .title-area {
-		background: #FFF;
-	}
-
-	.top-bar .toggle-topbar.menu-icon {
-		right: 15px;
-		top: 50%;
-		margin-top: -16px;
-		padding-left: 40px;
-		background: #FFF;
-	}
-
-	.top-bar .name h1 a {
-		font-weight: bold;
-		color: #999 !important;
-		width: 70%;
-		display: block;
-		padding: 0 15px;
-		border: 0px;
-	}
-
-	.top-bar.expanded {
-		height: auto !important;
-		background: transparent;
-	}
-
+.term-listing-heading {
+	margin: 0px 4.4%;
 }
 
 body {
@@ -140,23 +64,32 @@ body {
 }
 
 a, p {
-	font-family: 'opensans', sans-serif;
+	font-family: $font-opensans;
 	color: #666;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'roboto', serif;
 	text-transform: uppercase;
-	color: #4ecdfa;
+	color: $color-ldc-blue;
+}
+
+h3, h5 {
+	a {
+		font-family: 'roboto', serif;
+		font-size: 1.3em;
+		color: $color-ldc-blue;
+	}
 }
 
 p {
-	font-family: inherit;
-	font-weight: normal;
-	font-size: 1rem;
-	line-height: 1;
+	font-family: $font-opensans;
+	font-weight: 100;
+	font-size: 1.3rem;
+	line-height: 1.4em;
 	margin-bottom: 1.25rem;
 	text-rendering: optimizeLegibility;
+	text-align: justify;
 }
 
 table thead tr th, table tfoot tr th, table tbody tr td, table tr td, table tfoot tr td {
@@ -177,11 +110,6 @@ table thead tr th, table tfoot tr th, table tbody tr td, table tr td, table tfoo
 	margin: 0px;
 	padding: 0px;
 }
-
-h1#page-title {
-	margin: 1em 1.5em;
-}
-
 
 /**/
 /* ALERT BOX */
@@ -250,17 +178,19 @@ li.leaf a {
 
 .top-bar-section ul li:hover > a.active {
 	background: #FFF !important;
+	color: $color-ldc-blue-hover !important;
+	border: solid 1px $color-ldc-blue-hover !important;
 }
 
 a.active {
-	border: solid 1px #4ecdfa;
+	border: solid 1px $color-ldc-blue;
 	border-radius: 10px;
-	color: #4ecdfa !important;
+	color: $color-ldc-blue !important;
 }
 
 .top-bar-section ul li:hover > a {
-	background: #EEE !important;
-	color: #333;
+	background: $color-ldc-blue !important;
+	color: #FFF !important; 
 }
 
 .top-bar-section ul li > a {
@@ -271,11 +201,11 @@ a.active {
 	padding-left: 15px;
 	font-size: 0.8125em;
 	font-weight: bold;
-	background: #FFFFFF;
+	background: #FFF;
 }
 
 .top-bar.expanded .toggle-topbar a {
-	color: #4ecdfa;
+	color: $color-ldc-blue;
 }
 
 .top-bar .toggle-topbar.menu-icon a {
@@ -284,7 +214,7 @@ a.active {
 	height: 34px;
 	line-height: 33px;
 	padding: 0;
-	color: #4ecdfa;
+	color: $color-ldc-blue;
 }
 
 img.logo {
@@ -301,21 +231,6 @@ img.logo {
 
 .main-nav .leaf a {
 	font-family: 'roboto';
-}
-
-/**/
-/* FOOTER */
-.l-footer.panel.row {
-	color: #FFF;
-}
-
-footer.l-footer.panel.row {
-	background: #777;
-	padding: 0px;
-}
-
-.footer.large-12.columns {
-	padding: 0px;
 }
 
 /**/
@@ -358,12 +273,12 @@ td.rtecenter {
 	color: #FFF;	
 
 	a {
-		color: #4ecdfa !important;
+		color: $color-ldc-blue !important;
 	}
 
 	p {
 		color: #FFF !important;
-		font-family: 'opensans' !important;
+		font-family: $font-opensans !important;
 	}
 }
 
@@ -394,6 +309,8 @@ section.block.block-views.block-views-footer-block {
 
 /**/
 /* INPUT */
+
+
 
 .form-item input {
 	border: solid 1px #666;
@@ -438,29 +355,6 @@ input[type="url"], textarea {
 	font-size: 1.125em;
 }
 
-section.block.block-views.block-views-reservation-calendar-block-1 {
-	float: right;
-	width: 47%;
-	margin-right: 4em;
-	margin-top: 1em;
-}
-
-form#reservation-node-form {
-	float: left;
-	width: 45%;
-	margin-left: 2em;
-}
-
-input#edit-field-e-mail-address-und-0-value {
-	float: left;
-	width: 49%;
-}
-
-input#edit-field-contact-number-und-0-value {
-	float: right;
-	width: 49%;
-}
-
 .resizable-textarea .grippie {
 	display: none;
 }
@@ -470,15 +364,40 @@ button#edit-submit {
 	width: 100%;
 	height: 50px;
 	color: #FFF;
-	background: #4ecdfa;
+	background: $color-ldc-blue;
 	border: solid 0px #FFF;
 	border-radius: 8px;
 }
+
+/**/
+/* RESERVATION */
 
 fieldset.form-wrapper {
 	border: solid 0px #dddddd;
 	padding: 0px;
 	margin: 0px;
+}
+
+.view.view-reservation-calendar {
+	margin: 0px;
+	padding: 0px 0px 0px 1em;
+}
+
+.form-textarea {
+	border: 1px solid #888;
+	height: 5em;
+}
+
+textarea#edit-submitted-message {
+	height: 5em;
+}
+
+div#edit-field-e-mail-address {
+	padding: 0px 3px 0px 0px;
+}
+
+div#edit-field-contact-number {
+	padding: 0px 0px 0px 3px;
 }
 
 .container-inline-date .date-padding {
@@ -513,12 +432,21 @@ fieldset.form-wrapper {
 	width: 100%;
 }
 
-/**/
-/* RESERVATION */
 form#reservation-node-form {
-	float: left;
-	width: 43%;
-	margin-left: 4em;
+	padding: 0px 0px 0px 4.4em;
+}
+
+.form-radios {
+	font-size: 1.3em;
+}
+
+.view .date-nav-wrapper .date-heading {
+	position: relative;
+	width: 100%;
+	top: 0px;
+	text-align: center;
+	z-index: 0;
+	font-size: 0.7em;
 }
 
 /**/
@@ -567,24 +495,24 @@ form#reservation-node-form {
 }
 
 .calendar-calendar th.days {
-	background-color: #4ecdfa;
+	background-color: $color-ldc-blue;
 	color: #777;
 	font-weight: bold;
 	border: 0px solid #ccc;
 }
 
 .calendar-calendar tr td.today, .calendar-calendar tr.odd td.today, .calendar-calendar tr.even td.today {
-	background-color: #4ecdfa;
+	background-color: $color-ldc-blue;
 	color: #FFF;
 }
 
 table .mini-day-on a {
 	text-decoration: none;
-	color: #4ecdfa;
+	color: $color-ldc-blue;
 }
 
 table td.mini a:hover {
-	background: #4ecdfa;
+	background: $color-ldc-blue;
 	text-decoration: none !important;
 	color: white;
 	padding: 2px;
@@ -596,7 +524,7 @@ input[type="file"], input[type="checkbox"], input[type="radio"], select {
 }
 
 .form-item.form-type-radio.form-item-field-type-of-appointment-und {
-	font-family: 'opensans';
+	font-family: $font-opensans;
 }
 
 div#edit-field-type-of-appointment-und {
@@ -618,61 +546,50 @@ div#edit-field-type-of-appointment-und {
 	color: #777;
 }
 
-.views-field.views-field-field-before-image {
-	float: left;
-	width: 48%;
-	font-family: 'opensans';
+.views-field.views-field-title.gallery-content-title {
+	text-align: center;
+}
+
+@mixin before-after-text() {
+	font-family: $font-opensans;
 	font-style: oblique;
 	color: #999;
-	margin: 10px 0px;
+	text-align: center;
+	padding: 0.5em;
+}
 
+.views-field.views-field-field-before-image {
+	@include before-after-text();
 }
 
 .views-field.views-field-field-after-image {
-	float: right;
-	width: 48%;
-	font-family: 'opensans';
-	font-style: oblique;
-	color: #999;
-	margin: 10px 0px;
+	@include before-after-text();
 }
 
-.view-gallery-views {
-	table {
-		width: 100%;
-
-		td {
-			background: #FFF;
-		}
-	}
-
-	table tr th, table tr td {
-		padding: 1.5625em 1.125em;
-		font-size: 0.875em;
-		color: #222222;
-	}
-
-	img {
-		border-radius: 13px !important;
-	}
-
-	tr {
-		text-align: center;
-	}
-
-	table tr:nth-of-type(even) {
-		background: #f9f9f9;
-	}
-
-	table tr:nth-of-type(odd) {
-		background: #f9f9f9;
-	}
+.views-label.views-label-field-before-image {
+	margin-bottom: 0.5em;
 }
 
-.large-12.main.columns {
-	.view-gallery-views {
-		margin: 4em;
-	}
+.views-label.views-label-field-after-image {
+	margin-bottom: 0.5em;
+}
+
+.field-content.before-image img {
+	border-radius: 20px;
+}
+
+.field-content.after-image img {
+	border-radius: 20px;
+}
+
+.gallery-row div {
+	padding: 0px;
+}
+
+.gallery-row {
+	padding: 0px !important;
+	margin-top: 1em;
+	margin-bottom: 3.5em;
 }
 
 /**/
@@ -680,13 +597,13 @@ div#edit-field-type-of-appointment-und {
 
 h1.about-title a {
 	font-family: 'roboto';
-	color: #4ecdfa;
+	color: $color-ldc-blue;
 } 
 
 .view-about-us {
 	.views-field.views-field-title {
 		font-size: 2.5em;
-		color: #4ecdfa;
+		color: $color-ldc-blue;
 		height: 1em;
 	}
 
@@ -696,16 +613,17 @@ h1.about-title a {
 
 	a {
 		font-family: 'roboto';
-		color: #4ecdfa;
+		color: $color-ldc-blue;
 		text-transform: uppercase;
 	}
-	margin: 4em;
+	/*margin: 4em;*/
 }
 
 
 .views-field.views-field-field-about-image {
 	float: right;
 	margin-right: 5em;
+
 	img {
 		border-radius: 15px;
 	}
@@ -716,7 +634,7 @@ h1.about-title a {
 	width: 50%;
 	text-align: left;
 	position: relative;
-	font-family: 'opensans';
+	font-family: $font-opensans;
 	margin-bottom: 4em;
 	margin-top: 3em;
 	border-bottom: solid 1px;
@@ -728,7 +646,7 @@ h1.about-title a {
 	width: 50%;
 	text-align: left;
 	position: relative;
-	font-family: 'opensans';
+	font-family: $font-opensans;
 	margin-bottom: 4em;
 	border-bottom: solid 1px;
 	padding-bottom: 1em;
@@ -739,7 +657,7 @@ h1.about-title a {
 	width: 50%;
 	text-align: left;
 	position: relative;
-	font-family: 'opensans';
+	font-family: $font-opensans;
 	margin-bottom: 4em;
 	border-bottom: solid 1px;
 	padding-bottom: 1em;
@@ -750,7 +668,7 @@ h1.about-title a {
 	width: 50%;
 	text-align: left;
 	position: relative;
-	font-family: 'opensans';
+	font-family: $font-opensans;
 	margin-bottom: 4em;
 	border-bottom: solid 1px;
 	padding-bottom: 1em;
@@ -762,7 +680,7 @@ h1.about-title a {
 	width: 50%;
 	text-align: left;
 	position: relative;
-	font-family: 'opensans';
+	font-family: $font-opensans;
 	margin-bottom: 4em;
 	border-bottom: solid 1px;
 	padding-bottom: 1em;
@@ -774,7 +692,7 @@ h1.about-title a {
 	width: 50%;
 	text-align: left;
 	position: relative;
-	font-family: 'opensans';
+	font-family: $font-opensans;
 	margin-bottom: 4em;
 	border-bottom: solid 1px;
 	padding-bottom: 1em;
@@ -816,40 +734,8 @@ span.views-label.views-label-field-working-days {
 	font-weight: bold;
 }
 
-
 .views-field.views-field-description {
 	width: 95%;
-}
-
-/**/
-/* ABOUT US (BLOCK) */
-
-.views-field.views-field-field-about-us-block-image.about-block-image {
-	float: left;
-}
-
-h1.field-content.about-title {
-	margin-top: 3.5em;
-}
-
-.large-12.main.columns {
-	.view-about-us-block- {
-		margin: 4em;
-		text-align: center;
-	}
-
-	table {
-		background: #FFF;
-		margin-bottom: 1.25em;
-		border: solid 0px #dddddd;
-	}
-}
-
-
-
-/* HOW TO REACH US */
-article#node-14 {
-	margin: 4em;
 }
 
 .geofieldMap.geofield-processed-processed {
@@ -862,47 +748,70 @@ article#node-14 {
 	}
 }
 
-/* KEEP IN TOUCH */
-.keep-in-touch {
-	float: right;
-	width: 50%;
+h4.kit-title {
+	a {
+		font-family: 'roboto' !important;
+		color: $color-ldc-blue;
+		font-size: 1.6em;
+	}
+}
+
+@mixin before-image() {
+	display: inline-block;
+	background-size: 100%;
+	content: "";
+	width: 60px;
+	height: 50px;
+}
+
+.kit-email:before {	
+	background: url('/sites/default/files/LDCC2.png') no-repeat 0 0;
+	@include before-image();
+}
+.kit-number:before {
+	background: url('/sites/default/files/LDCC1.png') no-repeat 0 0;
+	@include before-image();}
+.kit-web:before {
+	background: url('/sites/default/files/LDCC.png') no-repeat 0 0;
+	@include before-image();
+}
+.kit-address:before {
+	background: url('/sites/default/files/LDCC3.png') no-repeat 0 0;
+	@include before-image();
+}
+.kit-day:before {
+	background: url('/sites/default/files/LDCC4.png') no-repeat 0 0;
+	@include before-image();
 }
 
 form#webform-client-form-14 {
-	float: left;
+	margin-top: 3%;
 }
 
-@import "_home-block";
-
+form#webform-client-form-14 .form-item input {
+	border: solid 1px #888;
+	border-radius: 4px;
+	margin: 0 0 0.5em 0;
+}
 /* ================= ABOUT PAGE ================= */
 .about-us-content {
-	margin: 4em;
+	/*margin: 4em;*/
 
 	p {
 		line-height: 2.25em;
 		font-size: 1.2em;
-		font-family: 'opensans';
+		font-family: $font-opensans;
 		color: #888;
 	}
 
 	h3 {
 		font-size: 2.4em;
-		line-height: 0em;
+		line-height: 0.5em;
 	}
 
 	img {
 		border-radius: 13px;
 	}
-}
-
-.about-ldc {
-	float: left;
-}
-
-.about-msj {
-	float: left;
-	margin-right: 1em;
-	margin-top: 3em;
 }
 
 .about-accreditation {
@@ -919,15 +828,19 @@ form#webform-client-form-14 {
 .about-ldc {
 	img {
 		float: right;
+		max-width: 475px;
+		margin: 5px;
 	}
 }
 
-p.line {
-	border-bottom: double 4px #AAA;
-	line-height: 2.5em;
-	font-size: 1.7em;
-	font-family: 'roboto-thin';
-	font-weight: bold;
+.line {
+	p {
+		border-bottom: double 4px #AAA;
+		line-height: 2.5em;
+		font-size: 1.7em;
+		font-family: 'roboto-thin';
+		font-weight: bold;
+	}
 }
 
 .about-msj {
@@ -938,17 +851,424 @@ p.line {
 
 }
 
-/*.about-dentist {
-	img {
-		width: 30%;
-	}
-}*/
-
 .img-container {
-	border: solid 1px #4ecdfa;
-	width: 30%;
+	border: solid 1px $color-ldc-blue;
 	padding: 5px;
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.view.view-about-us {
+	margin: 0px;
+}
+
+.clinic-caption {
+	h4 {
+		color: $color-ldc-caption;
+		font-family: 'roboto-thin';
+		border-bottom: 4px double  $color-ldc-caption;		
+		padding-bottom: 1%;
+		text-transform: none;
+	}
+}
+
+.clinic-body {
+	padding-left: 5%;
+	padding-right: 0%;
+
+	p {
+		line-height: 2em;
+	}
+}
+
+.clinic-image {
+	padding-left: 2%;
+	padding-right: 5%;
+
+	img {
+		border-radius: 20px;
+	}
+
+}
+
+.about-us-row {
+	padding:0px 0px 5% 0px;
+}
+
+.about-us-row:nth-child(odd) {
+
+}
+
+.about-us-row:nth-child(even) {
+	.clinic-body {
+		float: right;
+		padding-left: 0%;
+		padding-right: 5%;
+	}
+
+	.clinic-image {
+		float: left;
+		padding-left: 5%;
+		padding-right: 2%;
+	}
+}
+
+section.block.block-views.block-views-accreditation-block {
+	text-align: center;
+	margin-top: 5%;
+}
+
+.block-views-accreditation-block {
+	h2.block-title {
+		display: inline;
+		text-align: center; 
+	}
+}
+
+.about-dentist-image {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.about-denist-image-field {
+	padding: 5% 0%; 
+
+	img {
+		border-radius: 20px;
+	}
+
+}
+
+.about-dentist-name {
+	padding-left: 3.6em;
+	padding-right: 3.6em;
+}
+	
+.about-dentist-name h4 {
+	a {
+		color: $color-ldc-blue;
+		font-family: 'roboto';
+	}
+}
+
+.about-view-profile span {
+	a {
+		color: $color-ldc-blue;
+		text-transform: uppercase;
+		font-family: $font-opensans;
+		font-weight: 600;
+		font-size: 0.9em;
+	}
+}
+
+.block-views-accreditation-block-block {
+	text-align: center;
+
+	h2.block-title {
+		display: inline;
+	}
+
+}
+
+.views-field.views-field-title.accreditation-item {
+	line-height: 3em;
+}
 /* ================= END ABOUT PAGE ================= */
+
+
+
+/* ================= CONTACT US PAGE ================= */
+button.secondary.button.radius.form-submit {
+	width: 100%;
+	background: $color-ldc-blue;
+	border: 0px;
+	border-radius: 7px;
+	color: white;
+	text-transform: uppercase;
+	margin: 1.5em 0px;
+}
+
+.webform-client-form-14 {
+	label {
+		display: none;
+	}
+}
+
+.form-item.webform-component.webform-component-textfield.webform-component--email {
+	float: left;
+	width: 49%;
+}
+
+.form-item.webform-component.webform-component-textfield.webform-component--contact-number {
+	float: right;
+	width: 49%;
+}
+
+form#webform-client-form-14 {
+	padding: 0px;
+
+	.form-item {
+		margin-top: 0em;
+		margin-bottom: 0em;
+	}
+
+	.form-item input {
+		border: solid 1px #888;
+		border-radius: 4px;
+	}
+}
+
+::-webkit-input-placeholder {
+   font-family: $font-opensans;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   font-family: $font-opensans; 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   font-family: $font-opensans;  
+}
+
+:-ms-input-placeholder {  
+   font-family: $font-opensans; 
+}
+/* ================= END CONTACT US PAGE ================= */
+
+
+
+/* ================= TESTIMONIALS PAGE ================= */
+.view-testimonials-page {
+	margin: 5em 2em;
+	text-align: center;
+}
+
+.testimonial-slide {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+strong.testi-page-title {
+	font-size: 2em;
+	font-family: 'roboto';
+	color: #777;
+}
+
+.testi-page-body p {
+	line-height: 2em;
+}
+
+span.testi-name {
+	font-family: $font-opensans;
+	font-weight: 400;
+}
+
+span.testi-occu {
+	font-family: $font-opensans;
+	font-weight: 300;
+}
+
+.testi-name-container {
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+}
+
+/* ================= END TESTIMONIALS PAGE ================= */
+
+
+
+/* ================= SERVICES PAGE ================= */
+button#edit-save-selected-currency {
+	display: none;
+}
+
+.view.view-services-view.view-id-services_view.view-display-id-page {
+	margin: 0em 5%;
+	line-height: 1.5em;
+	margin-bottom: 4em;
+}
+
+section.block.block-commerce-multicurrency.block-commerce-multicurrency-currency-selector {
+	margin: 0em 5%;
+}
+
+.views-exposed-form .views-exposed-widget .form-submit {
+	margin-top: 26.5%;
+}
+
+.view-services-view {
+	.row {
+		margin: 2% 0em;
+	}
+}
+
+.views-field-field-photo {
+	img {
+		width: 85%;
+		border-radius: 20px;
+	}
+	text-align: center;
+}
+
+.views-field-field-desc {
+	padding: 0px;
+	padding-bottom: 0.5%;
+}
+
+.views-label.views-label-field-desc.small-12.medium-12.large-2.left.column {
+	padding: 0px;
+}
+
+.views-field.views-field-field-dentist.small-12.medium-12.large-8.right.column {
+	padding: 0px;
+
+}
+
+.service-detail {
+	border-bottom: 1px solid #AAA;
+
+	.field-content {
+		font-size: 0.9em;
+		color: #777;
+	}
+}
+
+.service-detail.views-field-commerce-price {
+	border-bottom: 0px;
+}
+
+.service-detail.views-field-field-photo {
+	border-bottom: 0px;
+}
+
+@mixin service-label-properties() {
+	font-size: 0.9em;
+	font-weight: 600;
+	padding: 0px 0px;
+}
+
+.views-label.views-label-field-desc {
+	@include service-label-properties();
+}
+
+.views-label.views-label-field-dentist {
+	@include service-label-properties();
+}
+
+.views-label.views-label-commerce-price {
+	@include service-label-properties();
+}
+
+.form-item.form-type-select.form-item-selected-currency {
+	width: 24%;
+}
+
+.views-row.views-row-1.views-row-odd.views-row-first.row {
+	margin: 7% 0px;
+}
+
+h4.field-content.service-det-title {
+	margin-top: 0.5em;
+	color: #4ecdfa;
+	font-size: 1.6em;
+}
+
+.views-field-field-photo {
+	padding: 0px;
+}
+
+.service-detail {
+	margin-bottom: 1%;
+	padding-bottom: 2%;
+}
+/* ================= END SERVICES PAGE ================= */
+
+
+
+/* ================= RESERVATION ================= */
+div#edit-field-date-time-und-0-value {
+	width: 100%;
+}
+
+div#edit-field-date-time {
+	width: 100%;
+	float: left;
+}
+/* ================= END RESERVATION PAGE ================= */
+
+
+/* ================= DENTIST PAGE ================= */
+.vocabulary-doctors {
+	font-family: $font-opensans; 
+	font-size: 1.2em;
+	line-height: 1.9em;
+	font-weight: 100;
+
+	.field-type-text {
+		border-bottom: 1px solid $color-ldc-caption;
+		padding-bottom: 0.5%;
+	}
+}	
+/* ================= END DENTIST PAGE ================= */
+
+
+/**/
+h4.field-content.service-name {
+	margin-top: 7%;
+}
+
+
+
+.views-field.views-field-description {
+	text-align: justify;
+}
+
+.row .row {
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	max-width: none;
+}
+
+.about-dentist-row.small-12.medium-6.large-6.column {
+	margin-bottom: 10%;
+}
+
+.service-detail {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.form-item.form-type-select.form-item-selected-currency {
+	display: none;
+}
+
+.service-det-title {
+	a {
+		font-family: 'roboto';
+		color: $color-ldc-blue;
+	}
+
+	a:hover {
+		color: $color-ldc-blue-hover;
+	}
+}
+
+.views-label.views-label-field-desc.small-12.medium-12.large-2.left.column {
+	font-family: $font-opensans;
+}
+
+ul.button-group {
+	margin: 0 4.4%;
+}
+
+.form-item.form-type-password.form-item-pass-pass1.password-parent {
+	width: 100%;
+}
+
+.form-item.form-type-password.form-item-pass-pass2.confirm-parent {
+	width: 100%;
+}

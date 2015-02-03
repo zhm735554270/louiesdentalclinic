@@ -2,18 +2,34 @@
 /**
  * Implements hook_form_alter
 */
-// print_r(arg());
-// debug($form, NULL, TRUE);
+
 function louies_module_form_alter(&$form, &$form_state, $form_id) {
-	// $variable = $node->$nid = '1';
+	// print_r(arg());
+	// debug($form, is_null( ), TRUE);
 	if (arg(0) == 'node' && arg(1) == 'add' && arg(2) == 'reservation') {
 		$form['actions']['submit']['#value'] = "Set an Appointment";
+
+		// $form['field_full_name']['#attributes']['class'][] = 'small-12 medium-12 large-12 column';
+		$form['#attributes']['class'][] = 'small-12 medium-12 large-6 column';
+
+		$form['field_e_mail_address']['#attributes']['class'][] = 'small-12 medium-6 large-6 column';
+		$form['field_contact_number']['#attributes']['class'][] = 'small-12 medium-6 large-6 column';
+		// $form['#node']['webform']['components']['1']['name'] = "<h1>ASDASDASD</h1>";
 	}
-	// $form['revision_information']['revision']['#title'] = "Set An Appointment 2";
+
+	if (arg(0) == 'user') {
+		$form['#attributes']['class'][] =  'small-12 medium-6 large-6 column';
+	}
+
+	if (arg(0) == 'node' && arg(1) == '14') {
+		$form['#attributes']['class'][] = 'small-12 medium-6 large-6 column' ;
+	}
+
+	// IF PRICE == 0.00 CHANGE TO FREE
 }
 
 /**
- * Implements hook_form_alter
+ * Implements hook_page_alter
 */
 function louies_module_page_alter(&$page) {
 	// print_r(arg());
@@ -22,8 +38,6 @@ function louies_module_page_alter(&$page) {
 		echo '<style>h1#page-title{display:none;}</style>';
 	}
 }
-
-
 
 // function louies_module_page_alter(&$page) {
 // 	debug($page, NULL, TRUE);
@@ -35,4 +49,5 @@ function louies_module_page_alter(&$page) {
 
 // function louies_module_block_view_alter(&$data, $block) {
 // 	debug($data	, NULL, TRUE);
+// 	$data['content']['#markup'] = ''
 // }	

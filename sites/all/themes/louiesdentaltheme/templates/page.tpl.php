@@ -9,6 +9,7 @@
       <?php if ($top_bar_classes): ?>
       <div class="<?php print $top_bar_classes; ?>">
       <?php endif; ?>
+      <div class="small-12 medium-12">
         <nav class="top-bar"<?php print $top_bar_options; ?>>
           <ul class="title-area">
             <li class="name"><?php print $linked_logo; ?></li>
@@ -23,6 +24,7 @@
             <?php //endif; ?>
           </section>
         </nav>
+      </div>
       <?php if ($top_bar_classes): ?>
       </div>
       <?php endif; ?>

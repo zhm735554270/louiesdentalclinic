@@ -1,0 +1,6 @@
+<?php
+
+function custom_class_node_view($node, $langcode, $view_mode) {
+	$hello = $node->webform['components']['1']['extra']['css_classes'] = 'large-6 column';
+	// debug($hello, NULL, TRUE);
+}

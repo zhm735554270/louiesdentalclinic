@@ -1,0 +1,26 @@
+<?php
+
+function custom_module_menu() {
+	$items[] = array();
+
+	$items['custom_module'] = array(
+		'title' => t('Hello World'),
+		'description' => t('Intro To Custom Module'),
+		'page callback' => 'custom_module_test_form',
+		'access arguments' => array('access content'),
+		'#markup' => '<a href="http://www.facebook.com"><img src= "/' .drupal_get_path('module', 'custom_module'). '/images/small.png"></a>',
+		'type' => MENU_NORMAL_ITEM,
+	);
+
+	return $items;
+}
+
+function custom_module_test_form() {
+	$content = array();
+
+	$content['raw_markup'] = array(
+		'#markup' => '<a href="http://www.facebook.com"><img src= "/' .drupal_get_path('module', 'custom_module'). '/images/small.png"></a>',
+	);
+
+	return $content;
+}

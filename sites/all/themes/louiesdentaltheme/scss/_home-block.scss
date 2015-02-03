@@ -1,16 +1,24 @@
 /* HOME PAGE */
-
+$font-opensans: 'Open Sans', sans-serif;
+$color-ldc-blue: #4ecdfa;
+$color-ldc-blue-hover: #3187A6;
+$color-bgfooter: #777;
 /* BLOCKS */
 
 
 
 /* ================= BLOCK BANNER ================= */
+section.block.block-views.block-views-banner-block-block {
+	margin: 0px;
+}
+
+.view.view-banner-block- {
+	margin: 0px;
+}
+
 h1.banner-content-title {
 	position: absolute;
-	top: 30%;
-	left: 5%;
 	color:#FFF;
-	text-shadow: 3px 3px 5px rgba(150, 150, 150, 1);
 }
 
 h2.block-title {
@@ -31,19 +39,34 @@ section.block.block-views.contextual-links-region.block-views-banner-block-block
 	margin-bottom: 5.5em;
 }
 
-.views-slideshow-cycle-main-frame-row-item.views-row.views-row-1.views-row-even {
-	position: relative;
+.view-banner-block- .views-field.views-field-title {
+	position: absolute;
+	background: rgba(0,0,0, 0.15);
+	width: 100%;
+	height: 100%;
+	font-size: 2.4em;
+	color: #FFF;
 }
 
-.banner-slide-body {
-	position: absolute;
-	top: 43%;
-	left: 5.7%;
-	p {
-		color:#FFF;
-		text-shadow: 3px 3px 5px rgba(150, 150, 150, 1);
-		font-size: x-large;
-		width: 57%;
+.view-banner-block- {
+	position: relative;
+	
+	.field-content.banner-content-title {
+		position: absolute;
+		top: 40%;
+		padding-left: 4.4%;
+		padding-right: 4.4%;
+	}
+
+	.views-field.views-field-body {
+		position: absolute;
+		top: 47%;
+		padding-left: 4.4%;
+		padding-right: 4.4%;
+
+		p {
+			color: #FFF;
+		}
 	}
 }
 /* ================= END BLOCK BANNER ================= */
@@ -51,57 +74,55 @@ section.block.block-views.contextual-links-region.block-views-banner-block-block
 
 
 /* ================= SET APPOINTMENT (BLOCK) ================= */
-a.contact-us-button {
-	border: solid 1px #FFF;
-	padding: 1.1em;
-	float: right;
-	color: #FFF;
-	text-transform: uppercase;
+.view.view-set-appointment-block {
+	margin: 0px;
 }
 
-a.contact-us-button:hover {
-	color: #4ecdfa;
-	background: #FFF;
-} 
-
-p.contact-us-title {
-	position: absolute;
-	color: #FFF;
-	font-family: 'roboto';
-	font-size: 2.5em;
-	text-transform: uppercase;
+section.block.block-views.block-views-set-appointment-block-block {
+	margin: 0;
+	background: $color-ldc-blue;
 }
 
-.footer.large-12.columns {
-	.block-views-set-appointment-block-block {
-		height: 8em;
-		padding-left: 4em;
-		padding-right: 4em;
+@mixin set-as() {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 100;
+	font-size: 1.3rem;
+	line-height: 1.4em;
+	margin-bottom: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.appointment-text {
+	p {
+		color: #FFF;
+		@include set-as();
+		font-family: 'roboto';
 	}
 }
 
-.contact-us-container {
-	position: relative;
-	padding-top: 2.5em;
-	height: 100%;
+.appointment-link  {
+
 }
 
+.appointment-link {
+	text-align: center;
+	@include set-as();
 
-.block-views-set-appointment-block-block {
-	background: #4ecdfa;
+	a 	{
+		color: #FFF;
+		border: 1px solid;
+		padding: 0.4em 1em;
+	}
 }
-
-
 /* ================= END SET APPOINTMENT (BLOCK) ================= */
 
 
 
 /* ================= SERVICES (BLOCK) ================= */
 h4.field-content.service-name {
-	width: 95%;
 	a {
 		font-family: 'roboto';
-		color: #4ecdfa;
+		color: $color-ldc-blue;
 	}
 }
 
@@ -109,28 +130,86 @@ section.block.block-views.block-views-services-block-block {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 0em;
-	margin-top: 2em;
+	margin-top: 6%;
 	text-align: center;
-	width: 75%;
+	width: 100s%;
 }
 
 .service-image {
-	border: solid 1px #4ecdfa;
+	border: solid 1px $color-ldc-blue;
 	padding: 10px 10px;
-	width: 95%;
-
+	width: 100%;
 	img {
 		border-radius: 20px;
+	}
+}
+
+.services-block-row {
+	padding-left: 0.9375em !important;
+	padding-right: 0.9375em !important;
+}
+
+a.views-more-link {
+	color: $color-ldc-blue;
+	font-size: 0.9em;
+	font-weight: 400;
+	float: right;
+}
+
+.views-more-link a:hover {
+	color: $color-ldc-blue-hover;
+}
+
+.field-content.services-block-read-more {
+	text-transform: uppercase;
+
+	a {
+		color: $color-ldc-blue;
+	}
+
+	a:hover {
+		color: $color-ldc-blue-hover;
 	}
 }
 /* ================= END SERVICES (BLOCK) ================= */
 
 
 
+/* ================= ABOUT (BLOCK) ================= */
+.views-field.views-field-field-about-us-block-image.about-block-image {
+	float: left;
+}
+
+h1.field-content.about-title {
+	margin-top: 3em;
+	text-align: justify;
+	font-size: 2.4em;	
+}
+
+.large-12.main.columns {
+	.view-about-us-block- {
+		/*margin: 4em;*/
+		text-align: center;
+	}
+
+	table {
+		background: #FFF;
+		margin-bottom: 1.25em;
+		border: solid 0px #dddddd;
+	}
+}
+
+section.block.block-views.block-views-about-us-block-block {
+	margin-top: 53%;
+}
+/* ================= END ABOUT (BLOCK) ================= */
+
+
+
 /* ================= TESTIMONIALS (BLOCK) ================= */
 h1.testimonial-title a {
 	font-family: 'roboto';
-	color: #4ecdfa;
+	color: $color-ldc-blue;
 }
 
 .large-12.main.columns {
@@ -145,19 +224,131 @@ h1.testimonial-title a {
 }
 
 .testimonial-image {
-
 	img {
 		border-radius: 400px;
-		width: 7em;
+	width: 90px;
+	height: 80px;
 	}
 }
 
 .field-content.testimonial-image {
-	width: 112px;
+	width: 90px;
 	margin-left: auto;
 	margin-right: auto;
 	border: solid 1px;
 	border-radius: 400px;
 	padding: 5px;
 }
+
+.field-content.testimonial-body p {
+	text-align: center;
+}
+
+.field-content.testimonial-name {
+	text-align: center !important;
+	margin-bottom: 0px;
+	line-height: 1em;
+	font-size: 1.1rem;
+	font-weight: 400;
+}
+
+.service-description {
+	p {
+		line-height: 2em;
+	}	
+}
+
+section.block.block-views.block-views-testimonials-block-block {
+	margin: 15% 0%;
+}
+
+p.testimonial-name {
+	text-align: center;
+	font-size: 0.9em;
+	line-height: 2.5em;
+	margin-bottom: 0px;
+	font-weight: 500;
+}
+
+p.testimonial-occupation {
+	text-align: center;
+	font-size: 0.8rem;
+	line-height: 1;
+}
+
+.testimonial-body p {
+	text-align: center;
+}
 /* ================= END TESTIMONIALS (BLOCK) ================= */
+
+
+
+/* ================= FOOTER (BLOCK) ================= */
+.l-footer.panel.row {
+	color: #FFF;
+}
+
+footer.l-footer.panel.row {
+	background: $color-bgfooter;
+	padding: 0px;
+}
+
+.footer.large-12.columns {
+	padding: 0px;
+}
+
+section.block.block-views.block-views-footer-block {
+	text-align: center;
+}
+
+.footer-row {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.footer-name {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.social-media-icons {
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.rights-reserved {
+	text-align: right;
+	padding-bottom: 1.5em;
+	padding-right: 0px !important;
+}
+
+.dev-by {
+	padding-bottom: 1.5em;
+	padding-left: 0px !important;
+
+	a {
+		color: #DDD;
+	}
+
+	a:hover {
+		color: $color-ldc-blue;
+	}
+}
+/* ================= END FOOTER (BLOCK) ================= */
+.form-item.form-type-radio.form-item-field-type-of-appointment-und:first-child {
+	display: none;
+}
+
+.form-item.form-type-radio.form-item-field-patient-s-information-und:first-child {
+	display: none;
+}
+
+div#edit-field-patient-s-information-und {
+	display: inline-flex;
+}
+
+input {
+	font-family: $font-opensans !important;
+}
+

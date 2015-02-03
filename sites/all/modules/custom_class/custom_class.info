@@ -1,0 +1,4 @@
+name = Custom Class
+description = Creates a custom class for node 14.
+package = louiesdental
+core = 7.x

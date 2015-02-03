@@ -1,0 +1,4 @@
+name = Custom Module
+description = Custom hook menu module
+package = Custom
+core = 7.x
