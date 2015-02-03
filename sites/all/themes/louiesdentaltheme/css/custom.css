@@ -9214,28 +9214,38 @@ section.block.block-commerce-multicurrency.block-commerce-multicurrency-currency
 }
 
 /* line 1163, ../scss/_louies.scss */
+.views-label.views-label-field-up-to {
+  font-size: 0.9em;
+  font-weight: 600;
+  padding: 0px 0px;
+}
+
+/* line 1167, ../scss/_louies.scss */
 .form-item.form-type-select.form-item-selected-currency {
   width: 24%;
 }
 
-/* line 1167, ../scss/_louies.scss */
-.views-row.views-row-1.views-row-odd.views-row-first.row {
-  margin: 7% 0px;
+/*.views-row.views-row-1.views-row-odd.views-row-first.row {
+	margin: 7% 0px;
+}*/
+/* line 1177, ../scss/_louies.scss */
+.services-row {
+  margin: 7em 0em !important;
 }
 
-/* line 1171, ../scss/_louies.scss */
+/* line 1181, ../scss/_louies.scss */
 h4.field-content.service-det-title {
   margin-top: 0.5em;
   color: #4ecdfa;
   font-size: 1.6em;
 }
 
-/* line 1177, ../scss/_louies.scss */
+/* line 1187, ../scss/_louies.scss */
 .views-field-field-photo {
   padding: 0px;
 }
 
-/* line 1181, ../scss/_louies.scss */
+/* line 1191, ../scss/_louies.scss */
 .service-detail {
   margin-bottom: 1%;
   padding-bottom: 2%;
@@ -9243,12 +9253,12 @@ h4.field-content.service-det-title {
 
 /* ================= END SERVICES PAGE ================= */
 /* ================= RESERVATION ================= */
-/* line 1190, ../scss/_louies.scss */
+/* line 1200, ../scss/_louies.scss */
 div#edit-field-date-time-und-0-value {
   width: 100%;
 }
 
-/* line 1194, ../scss/_louies.scss */
+/* line 1204, ../scss/_louies.scss */
 div#edit-field-date-time {
   width: 100%;
   float: left;
@@ -9256,14 +9266,14 @@ div#edit-field-date-time {
 
 /* ================= END RESERVATION PAGE ================= */
 /* ================= DENTIST PAGE ================= */
-/* line 1202, ../scss/_louies.scss */
+/* line 1212, ../scss/_louies.scss */
 .vocabulary-doctors {
   font-family: "Open Sans", sans-serif;
   font-size: 1.2em;
   line-height: 1.9em;
   font-weight: 100;
 }
-/* line 1208, ../scss/_louies.scss */
+/* line 1218, ../scss/_louies.scss */
 .vocabulary-doctors .field-type-text {
   border-bottom: 1px solid #aaaaaa;
   padding-bottom: 0.5%;
@@ -9271,17 +9281,17 @@ div#edit-field-date-time {
 
 /* ================= END DENTIST PAGE ================= */
 /**/
-/* line 1217, ../scss/_louies.scss */
+/* line 1227, ../scss/_louies.scss */
 h4.field-content.service-name {
   margin-top: 7%;
 }
 
-/* line 1223, ../scss/_louies.scss */
+/* line 1233, ../scss/_louies.scss */
 .views-field.views-field-description {
   text-align: justify;
 }
 
-/* line 1227, ../scss/_louies.scss */
+/* line 1237, ../scss/_louies.scss */
 .row .row {
   width: auto;
   margin-left: auto;
@@ -9291,48 +9301,48 @@ h4.field-content.service-name {
   max-width: none;
 }
 
-/* line 1236, ../scss/_louies.scss */
+/* line 1246, ../scss/_louies.scss */
 .about-dentist-row.small-12.medium-6.large-6.column {
   margin-bottom: 10%;
 }
 
-/* line 1240, ../scss/_louies.scss */
+/* line 1250, ../scss/_louies.scss */
 .service-detail {
   padding-left: 0px;
   padding-right: 0px;
 }
 
-/* line 1245, ../scss/_louies.scss */
+/* line 1255, ../scss/_louies.scss */
 .form-item.form-type-select.form-item-selected-currency {
   display: none;
 }
 
-/* line 1250, ../scss/_louies.scss */
+/* line 1260, ../scss/_louies.scss */
 .service-det-title a {
   font-family: 'roboto';
   color: #4ecdfa;
 }
-/* line 1255, ../scss/_louies.scss */
+/* line 1265, ../scss/_louies.scss */
 .service-det-title a:hover {
   color: #3187a6;
 }
 
-/* line 1260, ../scss/_louies.scss */
+/* line 1270, ../scss/_louies.scss */
 .views-label.views-label-field-desc.small-12.medium-12.large-2.left.column {
   font-family: "Open Sans", sans-serif;
 }
 
-/* line 1264, ../scss/_louies.scss */
+/* line 1274, ../scss/_louies.scss */
 ul.button-group {
   margin: 0 4.4%;
 }
 
-/* line 1268, ../scss/_louies.scss */
+/* line 1278, ../scss/_louies.scss */
 .form-item.form-type-password.form-item-pass-pass1.password-parent {
   width: 100%;
 }
 
-/* line 1272, ../scss/_louies.scss */
+/* line 1282, ../scss/_louies.scss */
 .form-item.form-type-password.form-item-pass-pass2.confirm-parent {
   width: 100%;
 }

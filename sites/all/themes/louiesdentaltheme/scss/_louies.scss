@@ -1160,12 +1160,22 @@ section.block.block-commerce-multicurrency.block-commerce-multicurrency-currency
 	@include service-label-properties();
 }
 
+.views-label.views-label-field-up-to {
+	@include service-label-properties();
+}
+
 .form-item.form-type-select.form-item-selected-currency {
 	width: 24%;
 }
 
-.views-row.views-row-1.views-row-odd.views-row-first.row {
+/*.views-row.views-row-1.views-row-odd.views-row-first.row {
 	margin: 7% 0px;
+}*/
+
+
+
+.services-row {
+	margin: 7em 0em !important;
 }
 
 h4.field-content.service-det-title {
@@ -1272,3 +1282,4 @@ ul.button-group {
 .form-item.form-type-password.form-item-pass-pass2.confirm-parent {
 	width: 100%;
 }
+
