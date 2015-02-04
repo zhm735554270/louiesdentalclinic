@@ -233,6 +233,15 @@ img.logo {
 	font-family: 'roboto';
 }
 
+.top-bar .toggle-topbar.menu-icon a {
+	text-indent: -48px;
+	width: 34px;
+	height: 34px;
+	line-height: 33px;
+	padding: 0;
+	color: #FFF;
+}
+
 /**/
 /* RESERVATION FORM */
 select.form-select {
@@ -1252,8 +1261,14 @@ h4.field-content.service-name {
 	padding-right: 0px;
 }
 
-.form-item.form-type-select.form-item-selected-currency {
-	display: none;
+li.toggle-topbar.menu-icon {
+	background: $color-ldc-blue !important;
+	color: #FFF;
+}
+
+button#edit-submit-services-view {
+	border: 0px;
+	border-radius: 8px;
 }
 
 .service-det-title {

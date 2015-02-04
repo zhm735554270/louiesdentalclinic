@@ -10,81 +10,23 @@ $color-ldc-blue: #4ecdfa;
 	}	
 }
 @media only screen and (min-width: 366px) and (max-width: 461px) {
-/*	.small-12 {
-		.service-image {
-			border: solid 1px $color-ldc-blue;
-			padding: 9%;
-			width: 100%;
-			margin-left: auto;
-			margin-right: auto;
-		}
-	}
-	
-	section.block.block-views.block-views-services-block-block {
-		.view-content {
-			display: inline !important;
-		}
-	}*/
-
 	img.logo {
 		width: 32% !important;
 	}
-
-/*	section.block.block-views.block-views-services-block-block {
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 0em;
-		margin-top: 1.5em !important;
-		text-align: center;
-		width: 100% !important;  
-	}*/
 }
 
 @media only screen and (min-width: 462px) and (max-width: 660px) {
-/*	.small-12 {
-		.service-image {
-			border: solid 1px $color-ldc-blue;
-			padding: 9%;
-			width: 100%;
-			margin-left: auto;
-			margin-right: auto;
-		}
-	}
-
-	section.block.block-views.block-views-services-block-block {
-		.view-content {
-			display: inline !important;
-		}
-	}*/
-
 	img.logo {
 		width: 18% !important;
 	}
-
-/*	section.block.block-views.block-views-services-block-block {
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 0em;
-		margin-top: 1.5em !important;
-		text-align: center;
-		width: 100% !important; 
-	}*/
 }
 
 @media only screen and (min-width: 661px) and (max-width: 940px) { 
 	img.logo {
 		width: 13% !important;
 	}
-
-/*	section.block.block-views.block-views-services-block-block {
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 0em;
-		margin-top: 1.5em !important;
-		text-align: center;
-		width: 100% !important; 
-	}*/
 }
+
 @media only screen and (max-width: 940px) {
 
 	nav.top-bar.expanded {
@@ -133,19 +75,6 @@ $color-ldc-blue: #4ecdfa;
 
 @media only screen and (max-width: 1210px) { 
 
-	/*	section.block.block-views.block-views-calendar-reservation-block-1 {
-			float: left !important;
-			width: 100% !important;
-			margin-right: 2em;
-			margin-top: 1em;
-		}
-
-		form#reservation-node-form {
-			float: left !important;
-			width: 100% !important;
-			margin-left: 0em !important;
-		}*/
-
 	nav.top-bar {
 		height: 55px !important;
 	}
@@ -191,5 +120,44 @@ $color-ldc-blue: #4ecdfa;
 @media only screen and (max-width: 429px) {
 	.view-banner-block-.field-content.banner-content-title {
 		font-size: 2px;
+	}
+}
+
+@media only screen and (max-width: 860px) {
+	.view-banner-block- .views-field.views-field-title {
+		font-size: 2em;
+	}
+
+	.field-content.banner-slide-body p {
+		font-size: 1.1em;
+	}
+}
+
+
+
+@media only screen and (max-width: 640px) {
+	.view-banner-block- .field-content.banner-content-title {
+		position: absolute;
+		top: 0%; 
+		padding-left: 4.4%;
+		padding-right: 4.4%;
+	}
+
+	.view-banner-block- .views-field.views-field-body {
+		top: 25%;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.view-banner-block- .views-field.views-field-body {
+		top: 35%;
+	}
+
+		.view-banner-block- .views-field.views-field-title {
+		font-size: 1.5em;
+	}
+
+	.field-content.banner-slide-body p {
+		font-size: 0.9em;
 	}
 }
