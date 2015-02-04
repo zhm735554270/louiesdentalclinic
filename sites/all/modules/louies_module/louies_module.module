@@ -40,8 +40,8 @@ function louies_module_page_alter(&$page) {
 }
 
 function louies_module_taxonomy_term_view_alter(&$build) {
-	print_r(arg());
-	debug($build, NULL, TRUE);
+	// print_r(arg());
+	// debug($build, NULL, TRUE);
 
 	// $build['field_specialty']['#theme'][] = 
 }

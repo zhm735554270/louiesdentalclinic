@@ -9335,3 +9335,78 @@ ul.button-group {
 .form-item.form-type-password.form-item-pass-pass2.confirm-parent {
   width: 100%;
 }
+
+/* DENTIST PROFILE */
+/* line 1304, ../scss/_louies.scss */
+.profile-name {
+  font-size: 2em;
+  font-family: 'roboto';
+  padding: 0px;
+  color: #4ecdfa;
+}
+
+/* line 1316, ../scss/_louies.scss */
+.profile-awards {
+  padding: 1em 0em;
+  border-bottom: 1px solid #AAA;
+}
+
+/* line 1320, ../scss/_louies.scss */
+.profile-degree {
+  padding: 1em 0em;
+  border-bottom: 1px solid #AAA;
+}
+
+/* line 1324, ../scss/_louies.scss */
+.profile-experience {
+  padding: 1em 0em;
+  border-bottom: 1px solid #AAA;
+}
+
+/* line 1328, ../scss/_louies.scss */
+.profile-specialty {
+  padding: 1em 0em;
+  border-bottom: 1px solid #AAA;
+}
+
+/* line 1332, ../scss/_louies.scss */
+.profile-training {
+  padding: 1em 0em;
+  border-bottom: 1px solid #AAA;
+}
+
+/* line 1336, ../scss/_louies.scss */
+.profile-working-days {
+  padding: 1em 0em;
+  border-bottom: 1px solid #AAA;
+}
+
+/* line 1340, ../scss/_louies.scss */
+.label {
+  background: #FFF;
+  color: #444;
+  line-height: 2em;
+  padding: 0px;
+  text-align: left;
+}
+
+/* line 1348, ../scss/_louies.scss */
+.field {
+  padding: 0px;
+  text-align: left;
+  line-height: 2em;
+}
+
+/* line 1354, ../scss/_louies.scss */
+.profile-image {
+  padding: 0px 2em;
+}
+/* line 1357, ../scss/_louies.scss */
+.profile-image img {
+  border-radius: 25px;
+}
+
+/* line 1362, ../scss/_louies.scss */
+.profile-row.row {
+  margin: 5em 0em;
+}

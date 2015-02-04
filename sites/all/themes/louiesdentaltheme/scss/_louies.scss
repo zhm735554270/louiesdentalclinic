@@ -1298,3 +1298,67 @@ ul.button-group {
 	width: 100%;
 }
 
+
+/* DENTIST PROFILE */
+
+.profile-name {
+	font-size: 2em;
+	font-family: 'roboto';
+	padding: 0px;
+	color: $color-ldc-blue;
+}
+
+@mixin profile-properties() {
+	padding: 1em 0em;
+	border-bottom: 1px solid #AAA;
+}
+
+.profile-awards {
+	@include profile-properties();
+}
+
+.profile-degree {
+	@include profile-properties();
+}
+
+.profile-experience {
+	@include profile-properties();
+}
+
+.profile-specialty {
+	@include profile-properties();
+}
+
+.profile-training {
+	@include profile-properties();
+}
+
+.profile-working-days {
+	@include profile-properties();
+}
+
+.label {
+	background: #FFF;
+	color: #444;
+	line-height: 2em;
+	padding: 0px;
+	text-align: left;
+}
+
+.field {
+	padding: 0px;
+	text-align: left;
+	line-height: 2em;
+}
+
+.profile-image {
+	padding: 0px 2em;
+
+	img {
+		border-radius: 25px;
+	}
+}
+
+.profile-row.row {
+	margin: 5em 0em;
+}
