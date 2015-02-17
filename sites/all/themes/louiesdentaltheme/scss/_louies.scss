@@ -29,6 +29,17 @@ $color-ldc-blue: #4ecdfa;
 $color-ldc-caption: #AAA;
 $color-bgfooter: #777;
 
+
+@mixin shadow() {
+	-webkit-box-shadow: 0px 6px 14px -6px rgba(50, 50, 50, 0.15);
+	-moz-box-shadow:    0px 6px 14px -6px rgba(50, 50, 50, 0.15);
+	box-shadow:         0px 6px 14px -6px rgba(50, 50, 50, 0.15);
+}
+
+header.l-header {
+	@include shadow();
+}
+
 /* ========== */
 
 .large-12.main.columns {
@@ -49,7 +60,7 @@ $color-bgfooter: #777;
 }
 
 h1#page-title {
-	margin: 0px 4.4%;
+	margin: 1em 4.4%;
 }
 
 .term-listing-heading {
@@ -82,10 +93,14 @@ h3, h5 {
 	}
 }
 
+h4 {
+	font-size: 20px;
+}
+
 p {
 	font-family: $font-opensans;
 	font-weight: 100;
-	font-size: 1.3rem;
+	font-size: 15px;
 	line-height: 1.4em;
 	margin-bottom: 1.25rem;
 	text-rendering: optimizeLegibility;
@@ -399,6 +414,7 @@ fieldset.form-wrapper {
 
 textarea#edit-submitted-message {
 	height: 5em;
+	font-family: $font-opensans;
 }
 
 div#edit-field-e-mail-address {
@@ -768,7 +784,7 @@ h4.kit-title {
 @mixin before-image() {
 	display: inline-block;
 	background-size: 100%;
-	content: "";
+	content: "    ";
 	width: 60px;
 	height: 50px;
 }
@@ -990,6 +1006,7 @@ section.block.block-views.block-views-accreditation-block {
 button.secondary.button.radius.form-submit {
 	width: 100%;
 	background: $color-ldc-blue;
+	font-family: $font-opensans;
 	border: 0px;
 	border-radius: 7px;
 	color: white;
@@ -1136,6 +1153,7 @@ section.block.block-commerce-multicurrency.block-commerce-multicurrency-currency
 
 .service-detail {
 	border-bottom: 1px solid #AAA;
+	color: #777;
 
 	.field-content {
 		font-size: 0.9em;
@@ -1361,4 +1379,39 @@ ul.button-group {
 
 .profile-row.row {
 	margin: 5em 0em;
+}
+
+.view.view-footer {
+	margin: 0px !important;
+}
+
+.view.view-services-block- {
+	margin: 0em;
+}
+
+.view.view-footer {
+	font-family: $font-opensans;
+}
+
+.field-content.services-block-read-more {
+	font-size: 13px;
+}
+
+.clinic-name {
+	margin: 1.4em 0em 0.5em 0;
+}
+
+ .gallery-row{
+ 	margin-top: 0em !important;
+ }
+
+ .views-field.views-field-title.gallery-content-title {
+	text-align: center;
+	padding-top: 1em;
+	color: $color-ldc-blue;
+}
+
+.keep-it-touch {
+	margin-top: 1.5em;
+	font-family: $font-opensans;
 }
