@@ -5,7 +5,9 @@
 
 function louies_module_form_alter(&$form, &$form_state, $form_id) {
 	// print_r(arg());
-	// debug($form, is_null( ), TRUE);
+	// debug($form, NULL, TRUE);
+
+	// print_r($form);
 	if (arg(0) == 'node' && arg(1) == 'add' && arg(2) == 'reservation') {
 		$form['actions']['submit']['#value'] = "Set an Appointment";
 
@@ -33,18 +35,14 @@ function louies_module_form_alter(&$form, &$form_state, $form_id) {
 */
 function louies_module_page_alter(&$page) {
 	// print_r(arg());
-	// debug($page, NULL, TRUE);
+	// debug($page, is_null(var), TRUE);
 	if(arg(0) == 'node' && arg(1) == '15') {
 		echo '<style>h1#page-title{display:none;}</style>';
 	}
+
+	$page['content']['system_main']['no_content']['#markup'] = '';
 }
 
-function louies_module_taxonomy_term_view_alter(&$build) {
-	// print_r(arg());
-	// debug($build, NULL, TRUE);
-
-	// $build['field_specialty']['#theme'][] = 
-}
 // function louies_module_page_alter(&$page) {
 // 	debug($page, NULL, TRUE);
 // }

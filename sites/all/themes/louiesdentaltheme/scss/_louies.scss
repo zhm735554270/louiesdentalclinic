@@ -1415,3 +1415,65 @@ ul.button-group {
 	margin-top: 1.5em;
 	font-family: $font-opensans;
 }
+
+@mixin slider_arrow() {
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 250px;
+	position: absolute;
+	top: 23.5%;
+	z-index: 10;
+
+	a {
+		display: none;
+	}
+}
+
+section.block.block-views.block-views-banner-block-block {
+	position: relative;
+}
+
+span#views_slideshow_controls_text_previous_banner_block_-block {
+	background: url("/sites/default/files/slideshow_arrow_left.png");
+	@include slider_arrow();
+	left: 0%
+}
+
+span#views_slideshow_controls_text_next_banner_block_-block {
+	background: url("/sites/default/files/slideshow_arrow_right.png");
+	@include slider_arrow();
+	right: 0%;
+}
+
+div.views-slideshow-pager-field-item {
+	width: 19px;
+	border: 3px solid #DDD;
+	height: 19px;
+	border-radius: 25px;
+	margin-left: 2px;
+	margin-right: 2px;
+
+	.views-field-counter {
+		display: none;
+	}
+}
+
+div.views-slideshow-pager-field-item.active {
+	background-color: #777;
+}
+
+div#widget_pager_bottom_banner_block_-block {
+	display: flex;
+	position: absolute;
+	bottom: 3%;
+	z-index: 10;
+	left: 46%;
+}
+
+.left-col {
+	padding: 0px;
+}
+
+.right-col {
+	padding: 0px;
+}

@@ -9543,3 +9543,78 @@ ul.button-group {
   margin-top: 1.5em;
   font-family: "Open Sans", sans-serif;
 }
+
+/* line 1432, ../scss/_louies.scss */
+section.block.block-views.block-views-banner-block-block {
+  position: relative;
+}
+
+/* line 1436, ../scss/_louies.scss */
+span#views_slideshow_controls_text_previous_banner_block_-block {
+  background: url("/sites/default/files/slideshow_arrow_left.png");
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 250px;
+  position: absolute;
+  top: 23.5%;
+  z-index: 10;
+  left: 0%;
+}
+/* line 1427, ../scss/_louies.scss */
+span#views_slideshow_controls_text_previous_banner_block_-block a {
+  display: none;
+}
+
+/* line 1442, ../scss/_louies.scss */
+span#views_slideshow_controls_text_next_banner_block_-block {
+  background: url("/sites/default/files/slideshow_arrow_right.png");
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 250px;
+  position: absolute;
+  top: 23.5%;
+  z-index: 10;
+  right: 0%;
+}
+/* line 1427, ../scss/_louies.scss */
+span#views_slideshow_controls_text_next_banner_block_-block a {
+  display: none;
+}
+
+/* line 1448, ../scss/_louies.scss */
+div.views-slideshow-pager-field-item {
+  width: 19px;
+  border: 3px solid #DDD;
+  height: 19px;
+  border-radius: 25px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+/* line 1456, ../scss/_louies.scss */
+div.views-slideshow-pager-field-item .views-field-counter {
+  display: none;
+}
+
+/* line 1461, ../scss/_louies.scss */
+div.views-slideshow-pager-field-item.active {
+  background-color: #777;
+}
+
+/* line 1465, ../scss/_louies.scss */
+div#widget_pager_bottom_banner_block_-block {
+  display: flex;
+  position: absolute;
+  bottom: 3%;
+  z-index: 10;
+  left: 46%;
+}
+
+/* line 1473, ../scss/_louies.scss */
+.left-col {
+  padding: 0px;
+}
+
+/* line 1477, ../scss/_louies.scss */
+.right-col {
+  padding: 0px;
+}
