@@ -9317,20 +9317,14 @@ h4.field-content.service-det-title {
   padding: 0px;
 }
 
-/* line 1218, ../scss/_louies.scss */
-.service-detail {
-  margin-bottom: 1%;
-  padding-bottom: 2%;
-}
-
 /* ================= END SERVICES PAGE ================= */
 /* ================= RESERVATION ================= */
-/* line 1227, ../scss/_louies.scss */
+/* line 1222, ../scss/_louies.scss */
 div#edit-field-date-time-und-0-value {
   width: 100%;
 }
 
-/* line 1231, ../scss/_louies.scss */
+/* line 1226, ../scss/_louies.scss */
 div#edit-field-date-time {
   width: 100%;
   float: left;
@@ -9338,14 +9332,14 @@ div#edit-field-date-time {
 
 /* ================= END RESERVATION PAGE ================= */
 /* ================= DENTIST PAGE ================= */
-/* line 1239, ../scss/_louies.scss */
+/* line 1234, ../scss/_louies.scss */
 .vocabulary-doctors {
   font-family: "Open Sans", sans-serif;
   font-size: 1.2em;
   line-height: 1.9em;
   font-weight: 100;
 }
-/* line 1245, ../scss/_louies.scss */
+/* line 1240, ../scss/_louies.scss */
 .vocabulary-doctors .field-type-text {
   border-bottom: 1px solid #aaaaaa;
   padding-bottom: 0.5%;
@@ -9353,17 +9347,17 @@ div#edit-field-date-time {
 
 /* ================= END DENTIST PAGE ================= */
 /**/
-/* line 1254, ../scss/_louies.scss */
+/* line 1249, ../scss/_louies.scss */
 h4.field-content.service-name {
   margin-top: 7%;
 }
 
-/* line 1260, ../scss/_louies.scss */
+/* line 1255, ../scss/_louies.scss */
 .views-field.views-field-description {
   text-align: justify;
 }
 
-/* line 1264, ../scss/_louies.scss */
+/* line 1259, ../scss/_louies.scss */
 .row .row {
   width: auto;
   margin-left: auto;
@@ -9373,61 +9367,62 @@ h4.field-content.service-name {
   max-width: none;
 }
 
-/* line 1273, ../scss/_louies.scss */
+/* line 1268, ../scss/_louies.scss */
 .about-dentist-row.small-12.medium-6.large-6.column {
   margin-bottom: 10%;
 }
 
-/* line 1277, ../scss/_louies.scss */
+/* line 1272, ../scss/_louies.scss */
 .service-detail {
   padding-left: 0px;
   padding-right: 0px;
+  margin-bottom: 10px;
 }
 
-/* line 1282, ../scss/_louies.scss */
+/* line 1278, ../scss/_louies.scss */
 li.toggle-topbar.menu-icon {
   background: #4ecdfa !important;
   color: #FFF;
 }
 
-/* line 1287, ../scss/_louies.scss */
+/* line 1283, ../scss/_louies.scss */
 button#edit-submit-services-view {
   border: 0px;
   border-radius: 8px;
 }
 
-/* line 1293, ../scss/_louies.scss */
+/* line 1289, ../scss/_louies.scss */
 .service-det-title a {
   font-family: 'roboto';
   color: #4ecdfa;
 }
-/* line 1298, ../scss/_louies.scss */
+/* line 1294, ../scss/_louies.scss */
 .service-det-title a:hover {
   color: #3187a6;
 }
 
-/* line 1303, ../scss/_louies.scss */
+/* line 1299, ../scss/_louies.scss */
 .views-label.views-label-field-desc.small-12.medium-12.large-2.left.column {
   font-family: "Open Sans", sans-serif;
 }
 
-/* line 1307, ../scss/_louies.scss */
+/* line 1303, ../scss/_louies.scss */
 ul.button-group {
   margin: 0 4.4%;
 }
 
-/* line 1311, ../scss/_louies.scss */
+/* line 1307, ../scss/_louies.scss */
 .form-item.form-type-password.form-item-pass-pass1.password-parent {
   width: 100%;
 }
 
-/* line 1315, ../scss/_louies.scss */
+/* line 1311, ../scss/_louies.scss */
 .form-item.form-type-password.form-item-pass-pass2.confirm-parent {
   width: 100%;
 }
 
 /* DENTIST PROFILE */
-/* line 1322, ../scss/_louies.scss */
+/* line 1318, ../scss/_louies.scss */
 .profile-name {
   font-size: 2em;
   font-family: 'roboto';
@@ -9435,43 +9430,43 @@ ul.button-group {
   color: #4ecdfa;
 }
 
-/* line 1334, ../scss/_louies.scss */
+/* line 1330, ../scss/_louies.scss */
 .profile-awards {
   padding: 1em 0em;
   border-bottom: 1px solid #AAA;
 }
 
-/* line 1338, ../scss/_louies.scss */
+/* line 1334, ../scss/_louies.scss */
 .profile-degree {
   padding: 1em 0em;
   border-bottom: 1px solid #AAA;
 }
 
-/* line 1342, ../scss/_louies.scss */
+/* line 1338, ../scss/_louies.scss */
 .profile-experience {
   padding: 1em 0em;
   border-bottom: 1px solid #AAA;
 }
 
-/* line 1346, ../scss/_louies.scss */
+/* line 1342, ../scss/_louies.scss */
 .profile-specialty {
   padding: 1em 0em;
   border-bottom: 1px solid #AAA;
 }
 
-/* line 1350, ../scss/_louies.scss */
+/* line 1346, ../scss/_louies.scss */
 .profile-training {
   padding: 1em 0em;
   border-bottom: 1px solid #AAA;
 }
 
-/* line 1354, ../scss/_louies.scss */
+/* line 1350, ../scss/_louies.scss */
 .profile-working-days {
   padding: 1em 0em;
   border-bottom: 1px solid #AAA;
 }
 
-/* line 1358, ../scss/_louies.scss */
+/* line 1354, ../scss/_louies.scss */
 .label {
   background: #FFF;
   color: #444;
@@ -9480,76 +9475,76 @@ ul.button-group {
   text-align: left;
 }
 
-/* line 1366, ../scss/_louies.scss */
+/* line 1362, ../scss/_louies.scss */
 .field {
   padding: 0px;
   text-align: left;
   line-height: 2em;
 }
 
-/* line 1372, ../scss/_louies.scss */
+/* line 1368, ../scss/_louies.scss */
 .profile-image {
   padding: 0px 2em;
 }
-/* line 1375, ../scss/_louies.scss */
+/* line 1371, ../scss/_louies.scss */
 .profile-image img {
   border-radius: 25px;
 }
 
-/* line 1380, ../scss/_louies.scss */
+/* line 1376, ../scss/_louies.scss */
 .profile-row.row {
   margin: 5em 0em;
 }
 
-/* line 1384, ../scss/_louies.scss */
+/* line 1380, ../scss/_louies.scss */
 .view.view-footer {
   margin: 0px !important;
 }
 
-/* line 1388, ../scss/_louies.scss */
+/* line 1384, ../scss/_louies.scss */
 .view.view-services-block- {
   margin: 0em;
 }
 
-/* line 1392, ../scss/_louies.scss */
+/* line 1388, ../scss/_louies.scss */
 .view.view-footer {
   font-family: "Open Sans", sans-serif;
 }
 
-/* line 1396, ../scss/_louies.scss */
+/* line 1392, ../scss/_louies.scss */
 .field-content.services-block-read-more {
   font-size: 13px;
 }
 
-/* line 1400, ../scss/_louies.scss */
+/* line 1396, ../scss/_louies.scss */
 .clinic-name {
   margin: 1.4em 0em 0.5em 0;
 }
 
-/* line 1404, ../scss/_louies.scss */
+/* line 1400, ../scss/_louies.scss */
 .gallery-row {
   margin-top: 0em !important;
 }
 
-/* line 1408, ../scss/_louies.scss */
+/* line 1404, ../scss/_louies.scss */
 .views-field.views-field-title.gallery-content-title {
   text-align: center;
   padding-top: 1em;
   color: #4ecdfa;
 }
 
-/* line 1414, ../scss/_louies.scss */
+/* line 1410, ../scss/_louies.scss */
 .keep-it-touch {
   margin-top: 1.5em;
   font-family: "Open Sans", sans-serif;
 }
 
-/* line 1432, ../scss/_louies.scss */
+/* line 1428, ../scss/_louies.scss */
 section.block.block-views.block-views-banner-block-block {
   position: relative;
 }
 
-/* line 1436, ../scss/_louies.scss */
+/* line 1432, ../scss/_louies.scss */
 span#views_slideshow_controls_text_previous_banner_block_-block {
   background: url("/sites/default/files/slideshow_arrow_left.png");
   background-repeat: no-repeat;
@@ -9560,12 +9555,12 @@ span#views_slideshow_controls_text_previous_banner_block_-block {
   z-index: 10;
   left: 0%;
 }
-/* line 1427, ../scss/_louies.scss */
+/* line 1423, ../scss/_louies.scss */
 span#views_slideshow_controls_text_previous_banner_block_-block a {
   display: none;
 }
 
-/* line 1442, ../scss/_louies.scss */
+/* line 1438, ../scss/_louies.scss */
 span#views_slideshow_controls_text_next_banner_block_-block {
   background: url("/sites/default/files/slideshow_arrow_right.png");
   background-repeat: no-repeat;
@@ -9576,12 +9571,12 @@ span#views_slideshow_controls_text_next_banner_block_-block {
   z-index: 10;
   right: 0%;
 }
-/* line 1427, ../scss/_louies.scss */
+/* line 1423, ../scss/_louies.scss */
 span#views_slideshow_controls_text_next_banner_block_-block a {
   display: none;
 }
 
-/* line 1448, ../scss/_louies.scss */
+/* line 1444, ../scss/_louies.scss */
 div.views-slideshow-pager-field-item {
   width: 19px;
   border: 3px solid #DDD;
@@ -9590,17 +9585,17 @@ div.views-slideshow-pager-field-item {
   margin-left: 2px;
   margin-right: 2px;
 }
-/* line 1456, ../scss/_louies.scss */
+/* line 1452, ../scss/_louies.scss */
 div.views-slideshow-pager-field-item .views-field-counter {
   display: none;
 }
 
-/* line 1461, ../scss/_louies.scss */
+/* line 1457, ../scss/_louies.scss */
 div.views-slideshow-pager-field-item.active {
   background-color: #777;
 }
 
-/* line 1465, ../scss/_louies.scss */
+/* line 1461, ../scss/_louies.scss */
 div#widget_pager_bottom_banner_block_-block {
   display: flex;
   position: absolute;
@@ -9609,12 +9604,12 @@ div#widget_pager_bottom_banner_block_-block {
   left: 46%;
 }
 
-/* line 1473, ../scss/_louies.scss */
+/* line 1469, ../scss/_louies.scss */
 .left-col {
   padding: 0px;
 }
 
-/* line 1477, ../scss/_louies.scss */
+/* line 1473, ../scss/_louies.scss */
 .right-col {
   padding: 0px;
 }
